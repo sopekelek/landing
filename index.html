@@ -26,11 +26,7 @@
    <link rel="stylesheet" href="swiper-bundle.min.css">
    <!--main css-->
    <link rel="stylesheet" href="main.css">
-   <style>
-      body{
-         background-color: cadetblue;
-      }
-   </style>
+  
 </head>
 <body>
 
@@ -40,7 +36,7 @@
        <div class="header-wrapper">
            <div class="logo-menu">
                <a href="index.html" class="logo">
-                   <img src="assets/img/logo/logo.png" alt="logo">
+                   <h6>Miftah & Nikmah</h6>
                </a>
            </div>
            <div class="header-bar d-lg-none">
@@ -93,16 +89,16 @@
              <div class="col-lg-12">
                 <div class="banner__content center">
                    <div class="banner__shape">
-                      <img src="assets/img/banner/banner-shape.png" alt="banner__shape">
+                      <img src="banner-shape.png" alt="banner__shape">
                    </div>
                    <div class="banner__shape2">
-                      <img src="assets/img/banner/banner-shape2.png" alt="banner__shape">
-                   </div>
-                   <div class="banner__shape3">
-                      <img src="assets/img/banner/banner-shape3.png" alt="banner__shape">
-                   </div>
+                     <img src="banner-shape2.png" alt="banner__shape">
+                  </div>
+                  <div class="banner__shape3">
+                     <img src="banner-shape3.png" alt="banner__shape">
+                  </div>
                    <h5 class="wow fadeInUp" data-wow-duration="2s">The Wedding of</h5>
-                   <h1 class="wow fadeInDown" data-wow-duration="4s">Shakira & Deniel</h1>
+                   <h1 class="wow fadeInDown" data-wow-duration="4s">Miftah & Nikmah</h1>
                    <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
                 </div>
              </div>
@@ -706,6 +702,14 @@
 </section>
 <!--=========== Footer Section End ========= -->
 
+<!--=========== music Section End ========= -->
+<div>
+   <audio id="weddingaudio" autoplay loop>
+      <source src="music.mp3" type="audio/mp3">browser tidak support
+   </audio>
+</div>
+<!--=========== music Section End ========= -->
+
 
          
     
@@ -725,5 +729,11 @@
    <script src="jquery.magnific-popup.min.js"></script> 
    <!--main Js-->
    <script src="main.js"></script>
+   <script>
+      document.addEventListener('click', function() {
+         var audio = document.getElementById('weddingaudio');
+         audio.play();
+      })
+   </script>
 </body>
 </html>
