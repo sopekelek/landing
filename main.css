@@ -609,7 +609,7 @@ p {
 /*========== Banner Start ==========*/
 .banner__section {
   overflow: hidden;
-  background: url(../img/banner/banner.jpg) no-repeat center center;
+  background: url(background-desktop.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -775,7 +775,7 @@ p {
   height: 100%;
 }
 .celebrate__section .celebrate__items .celebrate__thumb img {
-  width: 100%;
+  width:100%;
   height: 100%;
 }
 .celebrate__section .celebrate__content {
@@ -824,7 +824,7 @@ p {
 /*========== Love Section Start ==========*/
 .love__section {
   overflow: hidden;
-  background: url(../img/love/love-bg.jpg) no-repeat center center;
+  background: url(love-bg.jpg) no-repeat center center;
   background-size: cover;
 }
 .love__section .love__items {
@@ -1656,10 +1656,11 @@ p {
   .banner__section {
     padding: 150px 0;
   }
-  .banner__section .banner__content .banner__shape2 {
+  /* .banner__section .banner__content .banner__shape2 {
     display: none;
-  }
+  } */
   .banner__section .banner__content .banner__shape3 {
+    /* baner bawah no 2 */
     display: none;
   }
   .about__section .about__wrapper__one .owl-nav {
@@ -1693,12 +1694,12 @@ p {
   }
 }
 @media screen and (max-width: 500px) {
-  .about__section .about__wrap .flower__shape {
+  /* .about__section .about__wrap .flower__shape {
     display: none;
   }
   .about__section .about__wrap .flower__shape__two {
     display: none;
-  }
+  } */
 }
 /*===== About Section End =====*/
 /*===== Celebrate Section Start =====*/
@@ -1881,12 +1882,25 @@ p {
     font-size: 19px;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 576px) {
   .attending__section .attending__items {
     position: relative;
   }
   .attending__section .attending__items .attending__content h6 {
     font-size: 16px;
+  }
+  .simply-countdown>.simply-section{
+    width: 50px;
+    height:50px;
+    padding: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    float:left;
+    margin:3px;
+    background:#1a0142;
+    border-radius: 50%;
+    box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
   }
 }
 /*===== Attending End =====*//*# sourceMappingURL=main.css.map */
