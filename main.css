@@ -404,7 +404,7 @@ p {
 /*========== Footer Section Start ==========*/
 .footer__section {
   overflow: hidden;
-  background: url(../img/footer/bg.jpg) no-repeat center center;
+  background: url(bg-footer.jpg) no-repeat center center;
   background-size: cover;
 }
 .footer__section .footer__top .footer__content {
@@ -690,7 +690,7 @@ p {
 /*========== Breadcumd Start ==========*/
 .breadcumd__banner {
   overflow: hidden;
-  background: url(../img/banner/bg.jpg) no-repeat center center;
+  background: url(bg.jpg) no-repeat center center;
   background-size: cover;
   padding: 120px 0;
   position: relative;
@@ -942,7 +942,7 @@ p {
 /*========== Testimonial Section End ==========*/
 /*========== Member Section Start ==========*/
 .member__section {
-  background: url(../img/member/bg.jpg) no-repeat center;
+  background: url(bg.jpg) no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -1111,7 +1111,7 @@ p {
 /*========== Attending Section Start ==========*/
 .attending__section {
   overflow: hidden;
-  background: url(../img/attending/bg.png) no-repeat center center;
+  background: url(bg-attending.png) no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -1680,6 +1680,9 @@ p {
   .breadcumd__banner .breadcumd__wrapper .right__content li {
     font-size: 18px;
   }
+.simply-countdown{
+  width: 70%;
+}
 }
 /*===== Banner Section End =====*/
 /*===== About Section Start =====*/
@@ -1889,18 +1892,6 @@ p {
   .attending__section .attending__items .attending__content h6 {
     font-size: 16px;
   }
-  .simply-countdown>.simply-section{
-    width: 50px;
-    height:50px;
-    padding: 20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    float:left;
-    margin:3px;
-    background:#1a0142;
-    border-radius: 50%;
-    box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
-  }
+  
 }
 /*===== Attending End =====*//*# sourceMappingURL=main.css.map */

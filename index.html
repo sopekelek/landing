@@ -29,9 +29,24 @@
    <!-- countdown -->
    <link rel="stylesheet" href="simplyCountdown.theme.default.css"/>
    <script src="simplyCountdown.min.js"></script>
+   <!-- botstrap -->
   <style>
    .captionsku{
       font-size: 9px;
+   }
+   .rsvp{
+      color: black;
+      background-image: url(love-bg.jpg);
+   }
+   .gifts{
+      background-image: url(love-bg.jpg);
+   }
+   .contact__info{
+      background-image: url(love-bg.jpg);
+   }
+   .dfrows{
+      display: flex;
+      flex-direction: row;
    }
   </style>
 </head>
@@ -183,7 +198,7 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6">
                <div class="celebrate__items">
                   <div class="celebrate__thumb">
-                     <img src="template.png" alt="celebrate__image" style="border-radius: 20%;">
+                     <img src="template.png" alt="celebrate__image">
                   </div>
                </div>
             </div>
@@ -525,7 +540,7 @@
      </div>
      
      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"  method="POST" 
-     action="https://script.google.com/macros/s/AKfycbx1MjbjOpVTSlYoq70PLvLblOVm6jHiW79iT1Q6F65WBtrEYeE949cZ31AuaFu5443jYA/exec">
+     action="https://script.google.com/macros/s/AKfycbx1MjbjOpVTSlYoq70PLvLblOVm6jHiW79iT1Q6F65WBtrEYeE949cZ31AuaFu5443jYA/exec" id="my-form">
  <div class="col-12">
    <div class="mb-3">
  <label for="nama" class="form-label">Nama Anda:</label>
@@ -568,19 +583,19 @@
 <!--=========== RSVP Section End ========= -->
 
 <!--=========== GIFTS Section Here ========= -->
-<section id="gifts" class="gifts">
+<section id="gifts" class="gifts" >
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-md-8 col-10 text-center">
-         <span>Ungkapan Tanda Kasih</span>
-         <h2>Kirim Hadiah</h2>
+         
+         <h2 class="mt-5">Kirim Hadiah</h2>
          <p></p>
        </div>
      </div>
      
      <div class="row justify-content-center text-center">
        <div class="col-md-6">
-         <ul class="list-group">
+         <ul class="list-group mb-5">
  <li class="list-group-item">
    <div class="fw-bold">BRI</div>
    123456789 - 
@@ -613,54 +628,49 @@
 <!--=========== GIFTS Section End ========= -->
 
 <!--=========== Contact Info Section ========= -->
-<section class="contact__section pt-120 pb-120" id="contact">
-   <div class="container">
-      <div class="section__header section__center wow fadeInDown" data-wow-duration="4s">
-         <h2 class="section__title">
-            have any question?
-         </h2>
-         <img src="assets/img/tittle/flower.png" alt="flower__tittle">
-      </div>
-       <div class="row justify-content-center">
-           <div class="col-lg-9">
-              <div class="contact__right">
-                 <form action="contact.php" id="contact-form" method="POST">
-                    <div class="row g-4">
-                       <div class="col-lg-6">
-                          <div class="form__clt">
-                             <input type="text" name="name" id="name" placeholder="Your Name...">
-                          </div>
-                       </div>
-                       <div class="col-lg-6">
-                          <div class="form__clt">
-                             <input type="text" name="email" id="email" placeholder=" Your Email...">
-                          </div>
-                       </div>
-                       <div class="col-lg-12">
-                          <div class="form__clt">
-                             <input type="text" name="number" id="number" placeholder="Phone Number...">
-                          </div>
-                       </div>
-                       <div class="col-lg-12">
-                          <div class="form__clt__big">
-                             <textarea name="message" id="message" placeholder="Message..."></textarea> 
-                          </div>
-                       </div>
-                       <div class="col-lg-12">
-                           <button type="submit" class="cmn--btn">
-                               send message
-                            </button>
-                       </div>
-                    </div>
-                    <p class="form-message"></p>
-                 </form>
+
+<!--=========== Contact Info End ========= -->
+<section class="contact__info pt-120 pb-120">
+   <div class="container dfrows">
+      <div class="row g-4">
+         <a href="https://s.id/Nikmahwedding">
+            <div class="col-lg-4">
+               <div class="info__items center">
+                 <div class="info__icon">
+                  <img src="geo-alt.svg" alt="lokasi">
+                  
+                 </div>
+                  <h4>LOKASI</h4>
+                  <p>Kediaman mempelai wanita. alamat: Dsn.Bulu Dsa.Kropak RT/RW:09/04 Kec.Wirosari Kab.Grobogan</p>
               </div>
+            </div>
+         </a>
+        <a href="mailto:onlinedigitalt@gmail.com">
+         <div class="col-lg-4">
+            <div class="info__items center">
+              <div class="info__icon">
+               <img src="envelope-at.svg" alt="email">
+          
+              </div>
+               <h4>Email Address</h4>
+               <p>onlinedigitalt@gmail.com</p>
            </div>
-        </div>
+         </div>
+        </a>
+         
+         <div class="col-lg-4">
+            <div class="info__items center">
+              <div class="info__icon">
+               <img src="telephone-inbound.svg" alt="telephone">
+             
+              </div>
+               <h4>Phone Number</h4>
+               <p>+6285 1750 51498</p>
+           </div>
+         </div>
+      </div>
    </div>
 </section>
-<!--=========== Contact Info End ========= -->
-
 <!--=========== Map Section Here ========= -->
 <div class="map__section">
    <div class="googpemap">
@@ -680,7 +690,7 @@
                   Thank you
                </h2>
                <h2>
-                  Shakira & Deniel
+                  Miftah & Nikmah
                </h2>
                <ul class="social__icon">
                   <li class="face">
@@ -707,7 +717,7 @@
    <div class="border__area">
       <div class="container">
          <div class="footer__bottom center">
-            <p>© 2023 All Rights Reserved. Designed by <a href="#0" class="text-base-2">NextGenerationDev</a></p>
+            <p>&copy; 2024 All Rights Reserved. Designed by <a href="#0" class="text-base-2">Miftah & Nikmah</a></p>
          </div>
       </div>
    </div>
@@ -717,7 +727,7 @@
 <!--=========== music Section End ========= -->
 <div>
    <audio id="weddingaudio" autoplay loop>
-      <source src="music.mp3" type="audio/mp3">browser tidak support
+      <source src=".mp3" type="audio/mp3">browser tidak support
    </audio>
 </div>
 <!--=========== music Section End ========= -->
@@ -751,10 +761,10 @@
                  minutes: 30, // Default is 0 [0-59] integer
                  seconds: 0, // Default is 0 [0-59] integer
                  words: { //words displayed into the countdown
-                     days: { singular: 'day', plural: 'days' },
-                     hours: { singular: 'hour', plural: 'hours' },
-                     minutes: { singular: 'minute', plural: 'minutes' },
-                     seconds: { singular: 'second', plural: 'seconds' }
+                     days: { singular: 'hari', plural: 'hari' },
+                     hours: { singular: 'jam', plural: 'jam' },
+                     minutes: { singular: 'menit', plural: 'menit' },
+                     seconds: { singular: 'detik', plural: 'detik' }
                  },
                  plural: true, //use plurals
                  inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
@@ -774,6 +784,24 @@
          var audio = document.getElementById('weddingaudio');
          audio.play();
       })
+   </script>
+   <script>
+      window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+
    </script>
 </body>
 </html>
