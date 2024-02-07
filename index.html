@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="author" content="NextGenerationDev">
-   <title>Wedding, Wedding Planer & Event Landing Page HTML Template</title>
+   <title>Wedding Miftah & Nikmah</title>
    <!--Favicon img-->
    <link rel="shortcut icon" href="assets/img/logo/favicon.png">
    <!--Bootstarp min css-->
@@ -29,7 +29,8 @@
    <!-- countdown -->
    <link rel="stylesheet" href="simplyCountdown.theme.default.css"/>
    <script src="simplyCountdown.min.js"></script>
-   <!-- botstrap -->
+   <!-- botstrap icon-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
    .captionsku{
       font-size: 9px;
@@ -47,17 +48,87 @@
    .dfrows{
       display: flex;
       flex-direction: row;
+   }.fulvh{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: blue;
+   }.container_flex{
+     width: 90%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }.fulvh .container_flex h5{
+     font-family: "Crimson Text", serif;
+   }.fulvh .container_flex h1{
+     font-family: "Blacksword", sans-serif;
+   }.fulvh .container_flex h3{
+     font-family: "Blacksword", sans-serif;
+   }.disable_display{
+     display: none;
    }
+   .audio-icon-wrapper{
+      width: 3rem;
+      height: 3rem;
+      font-size: 3rem;
+      position: fixed;
+      bottom: 5rem;
+      right: 1.2rem;
+      cursor: pointer;
+      color: white;
+      opacity: 0.5;
+      mix-blend-mode: difference;
+      animation: rotating 4s linear infinite;
+      transform-origin: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 0;
+      z-index: 999999;
+    }
+    @keyframes rotating {
+      form{
+        transform: rotate(0);
+      }
+      to{
+        transform: rotate(360deg);
+      }
+    }
+
+@media screen and (max-width: 575px) {
+  iframe{
+  width: 275px;
+  height: 400px;
+}
+}
   </style>
 </head>
 <body>
+  
+  <!--=========== Banner Section Here selesai========= -->
+<section id="hero" class="fulvh">
+  <div class="container_flex">
+    <h4 class="wow fadeInDown" data-wow-duration="4s">Kepada yth <span></span> </h4>
+    <img class="" src="hero_provil.png" alt="provil-depan" width="150px" height="150px"/>
+    <h5 class="wow fadeInUp" data-wow-duration="2s">The Wedding of</h5>
+    <h1 class="wow fadeInDown" data-wow-duration="4s">Miftah & Nikmah</h1>
+    <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
+    <div class="simply-countdown"></div>
+    <a href="#about" class="btn btn-lg mt-4" onclick="displayedOn()">Lihat Undangan</a>
+  </div>
+</section>
+<!--=========== Banner Section End selesai========= -->
+
+<div class="disable_display">
 
  <!--Header Here selesai-->
  <header class="header-section">
    <div class="container">
        <div class="header-wrapper">
            <div class="logo-menu">
-               <a href="index.html" class="logo">
+               <a href="#hero" class="logo">
                    <h6>Miftah & Nikmah</h6>
                </a>
            </div>
@@ -68,7 +139,7 @@
            </div>
            <ul class="main-menu">
                <li class="text-base">
-                   <a href="index.html">Home</a>
+                   <a href="#hero">Home</a>
                </li>
                <li>
                    <a href="#about">About</a>
@@ -77,16 +148,13 @@
                    <a href="#story">story</a>
                </li>
                <li>
-                   <a href="#gallery">gallery</a>
-               </li>
-               <li>
                    <a href="#book">Guestbook</a>
                </li>
                <li>
-                   <a href="#rsvp">RSVP</a>
+                   <a href="#info">Informasi</a>
                </li>
                <li>
-                   <a href="#contact">contact</a>
+                   <a href="#rsvp">RSVP</a>
                </li>
                <li>
                   <a href="#gifts">GIFTS</a>
@@ -97,7 +165,6 @@
 </header>
 <!--Header End selesai-->
 
-
 <!--==== Scroll-Up Section Here selesai======= -->
 <div class="scroll-up">
    <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
@@ -105,34 +172,6 @@
    </svg>
 </div>
 <!--==== Scroll-Up Section End selesai======= -->
-
-<!--=========== Banner Section Here selesai========= -->
-<section class="banner__section">
-   <div class="banner-overlay">
-       <div class="container">
-          <div class="row g-4 justify-content-center">
-             <div class="col-lg-12">
-                <div class="banner__content center">
-                   <div class="banner__shape">
-                      <img src="banner-shape.png" alt="banner__shape">
-                   </div>
-                   <div class="banner__shape2">
-                     <img src="banner-shape2.png" alt="banner__shape">
-                  </div>
-                  <div class="banner__shape3">
-                     <img src="banner-shape3.png" alt="banner__shape">
-                  </div>
-                   <h5 class="wow fadeInUp" data-wow-duration="2s">The Wedding of</h5>
-                   <h1 class="wow fadeInDown" data-wow-duration="4s">Miftah & Nikmah</h1>
-                   <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
-                   <div class="simply-countdown"></div>
-                </div>
-             </div>
-          </div>
-       </div>
-   </div>
-</section>
-<!--=========== Banner Section End selesai========= -->
 
 <!--=========== About Section Here selesai========= -->
 <section class="about__section pt-120 pb-120" id="about">
@@ -198,7 +237,7 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6">
                <div class="celebrate__items">
                   <div class="celebrate__thumb">
-                     <img src="template.png" alt="celebrate__image">
+                     <img src="template.png" alt="celebrate__image" style="border-radius:10%;">
                   </div>
                </div>
             </div>
@@ -218,7 +257,9 @@
                   </h3>
                   <ul class="d-flex">
                      <li>Mei</li>
+                     <li>-</li>
                      <li>09</li>
+                     <li>-</li>
                      <li class="mr-none">2024</li>
                   </ul>
                   <div class="last__text">
@@ -273,63 +314,8 @@
 <!--=========== Love Section End selesai========= -->
 
 <!--=========== Gallery Section Here selesai========= -->
-<section class="gallery__section pt-120 pb-120" id="gallery">
-   <div class="left__shape fadeInDown" data-wow-duration="3s">
-      <img src="shape-left.png" alt="left__shape">
-   </div>
-   <div class="container">
-      <div class="section__header section__center wow fadeInDown" data-wow-duration="4s">
-         <h2 class="section__title">
-            Captured Moments
-         </h2>
-         <img src="flower.png" alt="flower__tittle">
-      </div>
-      <div class="row g-4">
-         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="gallery__thumb">
-               <a href="images (18).jpeg" class="popup__image">
-                  <img src="images (18).jpeg" alt="gallery__image">
-               </a>
-            </div>
-         </div>
-         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="gallery__thumb">
-               <a href="images (16).jpeg" class="popup__image">
-                  <img src="images (16).jpeg" alt="gallery__image">
-               </a>
-            </div>
-         </div>
-         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="gallery__thumb">
-               <a href="images (15).jpeg" class="popup__image">
-                  <img src="images (15).jpeg" alt="gallery__image">
-               </a>
-            </div>
-         </div>
-         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="gallery__thumb">
-               <a href="images (14).jpeg" class="popup__image">
-                  <img src="images (14).jpeg" alt="gallery__image">
-               </a>
-            </div>
-         </div>
-         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="gallery__thumb">
-               <a href="images (13).jpeg" class="popup__image">
-                  <img src="images (13).jpeg" alt="gallery__image">
-               </a>
-            </div>
-         </div>
-         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="gallery__thumb">
-               <a href="images (12).jpeg" class="popup__image">
-                  <img src="images (12).jpeg" alt="gallery__image">
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
+
+
 <!--=========== Gallery Section End selesai========= -->
 
 <!--=========== Testimonial Section Here selesai========= -->
@@ -385,13 +371,7 @@
 
 <!--=========== Member Section Here selesai -1========= -->
 <section class="member__wedding__section pb-120">
-   <div class="shape__one">
-      <img src="left-shape111.png" alt="left__shape">
-   </div>
-   <div class="member__section pt-120 pb-120">
-      <div class="left__shape">
-         <img src="shape111.png" alt="shape__image">
-      </div>
+   <div class="member__section">
       <div class="member__wrapper owl-theme owl-carousel">
        <div class="member__thumb">
           <img src="photo-keluarga1.png" alt="member__image">
@@ -410,124 +390,81 @@
        </div>
       </div>
    </div>
-   <div class="wedding__section pt-120">
-      <div class="shape__two">
-         <img src="rightt-shape111.png" alt="left__shape">
-      </div>
-      <div class="container">
-         <div class="section__header section__center wow fadeInDown" data-wow-duration="4s">
-            <h2 class="section__title">
-               Wedding Info
-            </h2>
-            <img src="flower.png" alt="flower__tittle">
-         </div>
-         <div class="row g-4">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInDown" data-wow-duration="7s">
-               <div class="wedding__items">
-                  <div class="thumb">
-                     <img src="wedding1999.jpg" alt="team-img">
-                  </div>
-                  <div class="content__cover">
-                     <div class="wedding__content">
-                        <h3>
-                           The reception
-                        </h3>
-                        <div class="date">
-                           <h6>Kamis, 05, 2024</h6>
-                           <h6>08.30 pm - selesai</h6>
-                        </div>
-                        <div class="date__two">
-                           <h6>
-                             
-                           </h6>
-                           <h6>
-                              
-                           </h6>
-                        </div>
-                        <h4>
-                           
-                        </h4>
-                        <div class="wedding__button">
-                           <a href="https://s.id/Nikmahwedding" class="cmn--btn">
-                              buka maps
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="5s">
-               <div class="wedding__items active__items">
-                  <div class="thumb">
-                     <img src="wedding2999.jpg" alt="team-img">
-                  </div>
-                  <div class="content__cover">
-                     <div class="wedding__content">
-                        <h3>
-                           The Dining Time
-                        </h3>
-                        <div class="date">
-                           <h6>Kamis, 05, 2024</h6>
-                           <h6>08.30 pm - sd selesai</h6>
-                        </div>
-                        <div class="date__two">
-                           <h6>
-                              
-                           </h6>
-                           <h6>
-                             
-                           </h6>
-                        </div>
-                        <h4>
-                          
-                        </h4>
-                        <div class="wedding__button">
-                           <a href="https://s.id/Nikmahwedding" class="cmn--btn">
-                              buka maps
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 wow fadeInDown" data-wow-duration="2s">
-               <div class="wedding__items">
-                  <div class="thumb">
-                     <img src="wedding3999.jpg" alt="team-img">
-                  </div>
-                  <div class="content__cover">
-                     <div class="wedding__content">
-                        <h3>
-                           The wedding Party
-                        </h3>
-                        <div class="date">
-                           <h6>Kamis, 05, 2024</h6>
-                           <h6>08.30 pm - sd selesai</h6>
-                        </div>
-                        <div class="date__two">
-                           <h6>
-                            
-                           </h6>
-                           <h6>
-                           </h6>
-                        </div>
-                        <h4>
-                          
-                        </h4>
-                        <div class="wedding__button">
-                           <a href="https://s.id/Nikmahwedding" class="cmn--btn">
-                              buka maps
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
 </section>
 <!--=========== Member Section End selesai========= -->
+
+<!--=========== information Section Start selesai========= -->
+<section id="info" class="info">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2 class="mt-4">Informasi Acara</h2>
+          <p class="alamat">
+           Kediaman Mempelai Wanita, <br /> Alamat: Dsn.Bulu Dsa.Kropak RT/RW:09/04 Kec.Wirosari Kab.Grobogan
+          </p>
+          <div class="col-md-8 col-10 maps_embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d316.6864533005984!2d111.06220441033801!3d-7.147005241617964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70adabd764edc7%3A0xbf32218648eb2ccc!2sMusholla%20Jami&#39;us%20Sholah!5e0!3m2!1sid!2sid!4v1707307291236!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <a href="https://s.id/Nikmahwedding" target="_blank" class="btn btn-light btn-sm my-3" target="_blank">Buka Peta Lokasi</a>
+          <p class="description">Diharapkan untuk tidak salah alamat dan tanggal, Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilakukan pernikahan, boleh jadi anda salah jadwal, atau salah tempat. </p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 col-10">
+          
+          <div class="card text-center text-bg-light mb-5">
+  <div class="card-header">
+    Akad Nikah
+  </div>
+  <div class="card-body">
+    <div class="row justify-content-center">
+      
+    <div class="col-md-6">
+      <i class="bi bi-watch d-block"></i>
+      <span>08.00 - 10.00</span>
+    </div>
+    
+    <div class="col-md-6">
+      <i class="bi bi-calendar3 d-block"></i>
+      <span>Kamis, 05 November 2024</span>
+    </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+  </div>
+</div>
+       </div>
+        <div class="col-md-5 col-10 mb-5">
+          
+          <div class="card text-center text-bg-light">
+  <div class="card-header">
+    Resepsi
+  </div>
+  <div class="card-body">
+    <div class="row justify-content-center">
+      
+    <div class="col-md-6">
+      <i class="bi bi-watch d-block"></i>
+      <span>11.00 - selesai</span>
+    </div>
+    
+    <div class="col-md-6">
+      <i class="bi bi-calendar3 d-block"></i>
+      <span>Kamis, 05 November 2024</span>
+    </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--=========== information Section End selesai========= -->
 
 <!--=========== RSVP Section Here ========= -->
 <section id="rsvp" class="rsvp p-5">
@@ -649,53 +586,9 @@
 <!--=========== Contact Info Section ========= -->
 
 <!--=========== Contact Info End ========= -->
-<section class="contact__info pt-120 pb-120">
-   <div class="container dfrows">
-      <div class="row g-4">
-         <a href="https://s.id/Nikmahwedding">
-            <div class="col-lg-4">
-               <div class="info__items center">
-                 <div class="info__icon">
-                  <img src="geo-alt.svg" alt="lokasi">
-                  
-                 </div>
-                  <h4>LOKASI</h4>
-                  <p>Kediaman mempelai wanita. alamat: Dsn.Bulu Dsa.Kropak RT/RW:09/04 Kec.Wirosari Kab.Grobogan</p>
-              </div>
-            </div>
-         </a>
-        <a href="mailto:onlinedigitalt@gmail.com">
-         <div class="col-lg-4">
-            <div class="info__items center">
-              <div class="info__icon">
-               <img src="envelope-at.svg" alt="email">
-          
-              </div>
-               <h4>Email Address</h4>
-               <p>onlinedigitalt@gmail.com</p>
-           </div>
-         </div>
-        </a>
-         
-         <div class="col-lg-4">
-            <div class="info__items center">
-              <div class="info__icon">
-               <img src="telephone-inbound.svg" alt="telephone">
-             
-              </div>
-               <h4>Phone Number</h4>
-               <p>+6285 1750 51498</p>
-           </div>
-         </div>
-      </div>
-   </div>
-</section>
+
 <!--=========== Map Section Here ========= -->
-<div class="map__section">
-   <div class="googpemap">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13004082.928417291!2d-104.65713107818928!3d37.275578278180674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1649599302291!5m2!1sen!2sbd" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </div>
-</div>
+
 <!--=========== Map Section End ========= -->
 
 <!--=========== Footer Section Here ========= -->
@@ -744,12 +637,17 @@
 <!--=========== Footer Section End ========= -->
 
 <!--=========== music Section End ========= -->
-<div>
-   <audio id="weddingaudio" autoplay loop>
-      <source src=".mp3" type="audio/mp3">browser tidak support
-   </audio>
+<div id="audio-container">
+  <audio id="song" autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+  <div class="audio-icon-wrapper">
+    <i class="bi bi-disc"></i>
+  </div>
 </div>
 <!--=========== music Section End ========= -->
+
+</div>
 
 
          
@@ -799,12 +697,6 @@
        </script>
       <!-- simplyCountdown ebd -->
    <script>
-      document.addEventListener('click', function() {
-         var audio = document.getElementById('weddingaudio');
-         audio.play();
-      })
-   </script>
-   <script>
       window.addEventListener("load", function() {
   const form = document.getElementById('my-form');
   form.addEventListener("submit", function(e) {
@@ -822,5 +714,59 @@
 });
 
    </script>
+   <!-- musical -->
+   <script>
+  let isPlaying = false;
+  const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+  const sng = document.querySelector("#song");
+  const audioIcon = document.querySelector(".audio-icon-wrapper i")
+    function playAudio(){
+      song.volume = 0.1;
+      audioIconWrapper.style.display = "flex"
+      song.play();
+      isPlaying = true;
+    }
+    audioIconWrapper.onclick = function() {
+     if(isPlaying){
+       song.pause();
+       audioIcon.classList.remove("bi-disc");
+       audioIcon.classList.add("bi-pause-circle");
+     } else {
+       song.play()
+       audioIcon.classList.add("bi-disc");
+       audioIcon.classList.remove("bi-pause-circle");
+     }
+     isPlaying = !isPlaying
+    }
+    
+  </script>
+   <!-- display pro -->
+   <script>
+     const display = document.querySelector(".disable_display");
+     function displayedOn(){
+       display.style.display = "flex";
+       display.style.flexDirection = "column";
+       playAudio()
+     }
+   </script>
+   <!-- musik easy -->
+      <script>
+      document.addEventListener('click', function() {
+         var audio = document.getElementById('weddingaudio');
+         audio.play();
+      })
+   </script>
+  <!-- pronounce tamu -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get("nama") || "";
+    const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+    
+    
+    const namaContainer = document.querySelector("#hero h4 span");
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+    
+    document.querySelector("#nama").value = nama;
+  </script>
 </body>
 </html>
