@@ -53,7 +53,8 @@
      justify-content: center;
      align-items: center;
      height: 100vh;
-     background-color: blue;
+     background: url('/flower-wallpaper-hd.jpg') no-repeat left;
+     background-size: cover;
    }.container_flex{
      width: 90%;
      display: flex;
@@ -103,6 +104,15 @@
   height: 400px;
 }
 }
+.tombol{
+  color: white;
+  background-color: blue;
+  border: none;
+}.tombol:hover{
+  background-color: #1a0142;
+}.info{
+  background: url('/background-mobile.jpg') center center;
+}
   </style>
 </head>
 <body>
@@ -110,13 +120,13 @@
   <!--=========== Banner Section Here selesai========= -->
 <section id="hero" class="fulvh">
   <div class="container_flex">
-    <h4 class="wow fadeInDown" data-wow-duration="4s">Kepada yth <span></span> </h4>
+    <h6 class="wow fadeInDown" data-wow-duration="4s">Kepada yth <span></span> </h4>
     <img class="" src="hero_provil.png" alt="provil-depan" width="150px" height="150px"/>
     <h5 class="wow fadeInUp" data-wow-duration="2s">The Wedding of</h5>
     <h1 class="wow fadeInDown" data-wow-duration="4s">Miftah & Nikmah</h1>
     <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
     <div class="simply-countdown"></div>
-    <a href="#about" class="btn btn-lg mt-4" onclick="displayedOn()">Lihat Undangan</a>
+    <a href="#about" class="tombol btn btn-lg mt-4" onclick="displayedOn()">Lihat Undangan</a>
   </div>
 </section>
 <!--=========== Banner Section End selesai========= -->
@@ -763,7 +773,7 @@
     const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
     
     
-    const namaContainer = document.querySelector("#hero h4 span");
+    const namaContainer = document.querySelector("#hero h6 span");
     namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
     
     document.querySelector("#nama").value = nama;
