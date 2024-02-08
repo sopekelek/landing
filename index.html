@@ -58,14 +58,19 @@
      justify-content: center;
      align-items: center;
      height: 100vh;
-     background: url('/flower-wallpaper-hd.jpg') no-repeat left;
+     background: url('/blur-bg.jpg') no-repeat right;
      background-size: cover;
    }.container_flex{
      width: 90%;
+     height: 90%;
      display: flex;
-     flex-direction: column;
      justify-content: center;
      align-items: center;
+     text-align: center;
+     flex-direction: column;
+     
+     background: transparent;
+     backdrop-filter: blur(2px);
    }.fulvh .container_flex h5{
      font-family: "Crimson Text", serif;
    }.fulvh .container_flex h1{
@@ -117,6 +122,11 @@
   background-color: #1a0142;
 }.info{
   background: url('/background-mobile.jpg') center center;
+}.colorku{
+  color: #CB0000;
+}.padding_simply{
+  margin-top: 0;
+  margin-bottom: 0;
 }
   </style>
 </head>
@@ -128,9 +138,9 @@
     <h6 class="wow fadeInDown" data-wow-duration="4s">Kepada yth <span></span> </h4>
     <img class="animate__animated animate__pulse animate__delay-2s animate__infinite" src="hero_provil.png" alt="provil-depan" width="150px" height="150px"/>
     <h5 class="wow fadeInUp" data-wow-duration="2s">The Wedding of</h5>
-    <h1 class="wow fadeInDown" data-wow-duration="4s">Miftah & Nikmah</h1>
+    <h1 class="wow fadeInDown colorku" data-wow-duration="4s">Miftah & Nikmah</h1>
     <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
-    <div class="simply-countdown"></div>
+    <div class="simply-countdown padding_simply"></div>
     <a href="#about" class="tombol btn btn-lg mt-4" onclick="displayedOn()">Lihat Undangan</a>
   </div>
 </section>
