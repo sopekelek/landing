@@ -68,7 +68,6 @@
      align-items: center;
      text-align: center;
      flex-direction: column;
-     
      background: transparent;
      backdrop-filter: blur(2px);
    }.fulvh .container_flex h5{
@@ -77,8 +76,6 @@
      font-family: "Blacksword", sans-serif;
    }.fulvh .container_flex h3{
      font-family: "Blacksword", sans-serif;
-   }.disable_display{
-     display: none;
    }
    .audio-icon-wrapper{
       width: 3rem;
@@ -141,15 +138,13 @@
     <h1 class="wow fadeInDown colorku" data-wow-duration="4s">Miftah & Nikmah</h1>
     <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
     <div class="simply-countdown padding_simply"></div>
-    <a href="#about" class="tombol btn btn-lg mt-4" onclick="displayedOn()">Lihat Undangan</a>
+    <a href="#about" class="tombol btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
   </div>
 </section>
 <!--=========== Banner Section End selesai========= -->
 
-<div class="disable_display">
-
  <!--Header Here selesai-->
- <header class="header-section">
+ <header class="header-section" style="display:none;">
    <div class="container">
        <div class="header-wrapper">
            <div class="logo-menu">
@@ -539,7 +534,9 @@
  </div>
 </form>
      
-<div id="disqus_thread"></div>
+<div class="col-md-6">
+  <div id="disqus_thread"></div>
+</div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -666,13 +663,12 @@
   <audio id="song" autoplay loop>
     <source src="music.mp3" type="audio/mp3">
   </audio>
-  <div class="audio-icon-wrapper">
+  <div class="audio-icon-wrapper" style="display:none;">
     <i class="bi bi-disc"></i>
   </div>
 </div>
 <!--=========== music Section End ========= -->
 
-</div>
 
 
          
@@ -720,7 +716,7 @@
          });
      
        </script>
-      <!-- simplyCountdown ebd -->
+      <!-- input form -->
    <script>
       window.addEventListener("load", function() {
   const form = document.getElementById('my-form');
@@ -765,22 +761,6 @@
     }
     
   </script>
-   <!-- display pro -->
-   <script>
-     const display = document.querySelector(".disable_display");
-     function displayedOn(){
-       display.style.display = "flex";
-       display.style.flexDirection = "column";
-       playAudio()
-     }
-   </script>
-   <!-- musik easy -->
-      <script>
-      document.addEventListener('click', function() {
-         var audio = document.getElementById('weddingaudio');
-         audio.play();
-      })
-   </script>
   <!-- pronounce tamu -->
   <script>
     const urlParams = new URLSearchParams(window.location.search);
@@ -793,5 +773,42 @@
     
     document.querySelector("#nama").value = nama;
   </script>
+    <!-- lockscreen disable -->
+  <script>
+  const iconicMusick = document.querySelector(".audio-icon-wrapper");
+  const nav = document.querySelector(".header-section")
+    const rootElement = document.querySelector(":root");
+    let scrollTop = 0;
+    let scrollLeft = 0;
+
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.addEventListener('touchmove', preventDefaultScroll, { passive: false });
+
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function preventDefaultScroll(e) {
+      e.preventDefault();
+      window.scrollTo(scrollLeft, scrollTop);
+    }
+
+    function enableScroll() {
+      playAudio()
+      window.removeEventListener('touchmove', preventDefaultScroll);
+
+      rootElement.style.scrollBehavior = 'smooth';
+      localStorage.setItem('opened', 'true');
+      iconicMusick.style.display = "flex"
+      nav.style.display = "flex"
+    }
+
+    if(!localStorage.getItem('opened')){
+      console.log("sudah pernah")
+    }
+    disableScroll();
+</script>
 </body>
 </html>
