@@ -742,7 +742,8 @@
   const sng = document.querySelector("#song");
   const audioIcon = document.querySelector(".audio-icon-wrapper i")
     function playAudio(){
-      audioIconWrapper.style.display = "flex"
+      audioIconWrapper.style.display = "flex";
+      song.volume = 10;
       song.play();
       isPlaying = true;
     }
