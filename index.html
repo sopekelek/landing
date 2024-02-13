@@ -47,7 +47,6 @@
       background-position: top;
       background-attachment: fixed;
       background-size: cover;
-      backdrop-filter: blur(2px);
    }
    .captionsku{
       font-size: 9px;
@@ -56,12 +55,12 @@
       color: black;
       /* background-image: url(love-bg.jpg); */
    }
-   .gifts{
-      /* background-image: url(love-bg.jpg); */
+   /* .gifts{
+      background-image: url(love-bg.jpg);
    }
    .contact__info{
-      /* background-image: url(love-bg.jpg); */
-   }
+      background-image: url(love-bg.jpg);
+   } */
    .dfrows{
       display: flex;
       flex-direction: row;
@@ -129,9 +128,11 @@
   border: none;
 }.tombol:hover{
   background-color: #1a0142;
-}.info{
-  /* background: url('/background-mobile.jpg') center center; */
-}.colorku{
+}
+/* .info{
+  background: url('/background-mobile.jpg') center center;
+} */
+.colorku{
   color: #b69b03;
 }.padding_simply{
    display: flex;
@@ -167,7 +168,7 @@
 <!--=========== Banner Section End selesai========= -->
 
  <!--Header Here selesai-->
- <header class="header-section">
+ <header class="header-section" style="display: flex;">
    <div class="container">
        <div class="header-wrapper">
            <div class="logo-menu">
@@ -425,13 +426,13 @@
    <div class="member__section">
       <div class="member__wrapper owl-theme owl-carousel">
        <div class="member__thumb">
-          <img src="photo-keluarga1.png" alt="member__image">
+          <img src="1-1Biru Putih Elegan Simpel Ucapan Hari Santri Nasional Twibbon Cerita Instagram  (1).png" alt="member__image">
        </div>
        <div class="member__thumb">
-          <img src="photo-keluarga2.png" alt="member__image">
+          <img src="2-Biru Putih Elegan Simpel Ucapan Hari Santri Nasional Twibbon Cerita Instagram  (6).png" alt="member__image">
        </div>
        <div class="member__thumb">
-          <img src="photo-keluarga-3.png" alt="member__image">
+          <img src="3-Biru Putih Elegan Simpel Ucapan Hari Santri Nasional Twibbon Cerita Instagram  (3).png" alt="member__image">
        </div>
        <div class="member__thumb">
           <img src="photo-keluarga4.png" alt="member__image">
@@ -580,7 +581,7 @@
 
     
 
-<div id="dataPengguna" class="dataPengguna">
+<!-- <div id="dataPengguna" class="dataPengguna">
   <div class="row justify-content-center">
    <div class="col-md-12 col-12">
 
@@ -604,13 +605,50 @@
        </script>
        
        <div id="outputUserKu"></div>
-       
-
-
-
    </div>
   </div> 
-</div>
+</div> -->
+
+
+<table class="dataTable">
+   <thead>
+     <tr>
+       <th>No</th>
+       <th>Name</th>
+       <th>Confirm</th>
+       <th>Status</th>
+       <th>Message</th>
+       <th>Whatsaap</th>
+     </tr>
+   </thead>
+   <tbody id="outputUserKuYa">
+      <!-- output user -->
+   </tbody>
+ </table>
+ 
+
+ <script>
+    fetch('https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec')
+    .then(response => response.json())
+    .then(data => {
+      const tableBody = document.getElementById('outputUserKuYa');
+      data.forEach((row, index) => {
+         const tr = document.createElement('tr');
+         const numberCell = document.createElement('td');
+         numberCell.textContent = index + 1;
+         tr.appendChild(numberCell);
+         Object.values(row).forEach(value => {
+            const td = document.createElement('td');
+            td.textContent = value;
+            tr.appendChild(td);
+         });
+         tableBody.appendChild(tr);
+      });
+    })
+    .catch(error => console.error('Error:', error));
+ </script>
+
+
 <!--      
 <div class="col-md-6">
   <div id="disqus_thread"></div>
@@ -673,8 +711,8 @@
 
  <li class="list-group-item">
    <div class="fw-bold">SAWERIA</div>
-   <img class="img-tumbnail" src="asset/img/qrcode.png" alt="saweria QR code" />
- </li>
+   
+</li>
 </ul>
        </div>
      </div>
@@ -741,16 +779,16 @@
   <audio id="song" autoplay loop>
     <source src="yahabibal.mpeg" type="audio/mpeg">
   </audio>
-  <div class="audio-icon-wrapper" style="display:none;">
+  <div class="audio-icon-wrapper"  style="display: none;">
     <i class="bi bi-disc"></i>
   </div>
 </div>
 <!--=========== music Section End ========= -->
-<section class="videos_pro" style=" display: flex; justify-content: center; align-items: center;">
+<!-- <section class="videos_pro" style=" display: flex; justify-content: center; align-items: center;">
    <div class="video_weding" style="width: 80vh; height: auto; display: flex; justify-content: center;align-items: center;">
       <video src="undangan-saya (Video).mp4" controls autoplay width="100%" height="100%" style="border-radius:  10px;">testing</video>
    </div>
-</section>
+</section> -->
 
 
          
@@ -828,7 +866,7 @@
       
       song.play();
       audioIconWrapper.style.display = "flex";
-      song.volume = 100;
+     
       isPlaying = true;
     }
     audioIconWrapper.onclick = function() {
@@ -882,9 +920,10 @@
 
     function enableScroll() {
       
-      nav.style.display = 'flex';
-      window.removeEventListener('touchmove', preventDefaultScroll);
+     
       playAudio();
+      window.removeEventListener('touchmove', preventDefaultScroll);
+      
 
       rootElement.style.scrollBehavior = 'smooth';
       
