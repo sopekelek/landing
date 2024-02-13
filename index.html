@@ -104,13 +104,13 @@
         transform: rotate(360deg);
       }
     }
-
+/* 
 @media screen and (max-width: 575px) {
   iframe{
   width: 275px;
   height: 400px;
 }
-}
+} */
 .tombol{
   color: white;
   background-color: blue;
@@ -122,8 +122,17 @@
 }.colorku{
   color: #CB0000;
 }.padding_simply{
+   display: flex;
+   justify-content: center;
+   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
+}.maps_embed{
+   display: flex; justify-content: center; align-items: center;
+}.maps_embed iframe{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
   </style>
 </head>
@@ -186,11 +195,11 @@
 <!--Header End selesai-->
 
 <!--==== Scroll-Up Section Here selesai======= -->
-<div class="scroll-up">
+ <div class="scroll-up">
    <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
    </svg>
-</div>
+</div> 
 <!--==== Scroll-Up Section End selesai======= -->
 
 <!--=========== About Section Here selesai========= -->
@@ -417,13 +426,14 @@
 <section id="info" class="info">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-10 col-12 text-center">
           <h2 class="mt-4">Informasi Acara</h2>
           <p class="alamat">
            Kediaman Mempelai Wanita, <br /> Alamat: Dsn.Bulu Dsa.Kropak RT/RW:09/04 Kec.Wirosari Kab.Grobogan
           </p>
-          <div class="col-md-8 col-10 maps_embed">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d316.6864533005984!2d111.06220441033801!3d-7.147005241617964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70adabd764edc7%3A0xbf32218648eb2ccc!2sMusholla%20Jami&#39;us%20Sholah!5e0!3m2!1sid!2sid!4v1707307291236!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="col-md-12 col-12 maps_embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1707786097298!6m8!1m7!1sGLp3ZsipgAry-HkM7YraUg!2m2!1d-7.117441813193694!2d111.0940456144842!3f22.187146669303647!4f0!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
           </div>
           <a href="https://s.id/Nikmahwedding" target="_blank" class="btn btn-light btn-sm my-3" target="_blank">Buka Peta Lokasi</a>
           <p class="description">Diharapkan untuk tidak salah alamat dan tanggal, Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilakukan pernikahan, boleh jadi anda salah jadwal, atau salah tempat. </p>
@@ -431,9 +441,9 @@
       </div>
       
       <div class="row justify-content-center mt-4">
-        <div class="col-md-5 col-10">
+        <div class="col-md-5 col-11">
           
-          <div class="card text-center text-bg-light mb-5">
+          <div class="card text-center text-bg-light mb-4">
   <div class="card-header">
     Akad Nikah
   </div>
@@ -456,7 +466,7 @@
   </div>
 </div>
        </div>
-        <div class="col-md-5 col-10 mb-5">
+        <div class="col-md-5 col-11 mb-5">
           
           <div class="card text-center text-bg-light">
   <div class="card-header">
@@ -489,51 +499,92 @@
 <!--=========== RSVP Section Here ========= -->
 <section id="rsvp" class="rsvp p-5">
    <div class="container">
+
      <div class="row justify-content-center">
-       <div class="col-md-8 col-10 text-center">
+       <div class="col-md-10 col-12 text-center">
          <h2 class="mt-5 mb-5">Konfirmasi Kehadiran</h2>
          <p>isi form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
        </div>
      </div>
-     
-     <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"  method="POST" 
-     action="https://script.google.com/macros/s/AKfycbx1MjbjOpVTSlYoq70PLvLblOVm6jHiW79iT1Q6F65WBtrEYeE949cZ31AuaFu5443jYA/exec" id="my-form">
- <div class="col-12">
-   <div class="mb-3">
- <label for="nama" class="form-label">Nama Anda:</label>
- <input type="text" class="form-control" id="nama" name="nama" placeholder="nama anda">
-</div>
-</div>
 
-<div class="col-12">
- <div class="mb-3">
- <label for="jumlah" class="form-label">jumlah orang</label>
- <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="" placeholder="jumlah orang">
-</div>
-</div>
+<div class="row justify-content-center">
+   <div class="col-md-10 col-12">
 
-<div class="col-12">
- <div class="mb-3">
- <label for="status" class="form-label">Akan Hadir.?</label>
- <select name="status" id="status" class="form-select">
-   <option selected value="hadir">Ya, dengan senang hati saya akan hadir</option>
-   <option value="tidak hadir">Maaf, tidak bisa hadir</option>
- </select>
-</div>
-</div>
-
-<div class="col-12">
- <div class="mb-3">
-   <label for="message" class="form-label">Pesan Tambahan:</label>
-   <textarea class="form-control" id="message" name="message" rows="3" placeholder="Pesan atau Ucapan Anda"></textarea>
+      <form class="row g-1 align-items-center justify-content-center"  method="POST" 
+      action="https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec" id="my-form">
+  <div class="col-12">
+    <div class="mb-3">
+  <label for="nama" class="form-label">Nama Anda:</label>
+  <input type="text" class="form-control" id="nama" name="nama" placeholder="nama anda">
  </div>
-</div>
-
- <div class="col-12">
-   <button type="submit" class="btn btn-primary">kirim</button>
  </div>
-</form>
-     
+ 
+ <div class="col-12">
+  <div class="mb-3">
+  <label for="jumlah" class="form-label">jumlah orang</label>
+  <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="" placeholder="jumlah orang">
+ </div>
+ </div>
+ 
+ <div class="col-12">
+  <div class="mb-3">
+  <label for="status" class="form-label">Akan Hadir.?</label>
+  <select name="status" id="status" class="form-select">
+    <option selected value="hadir">Ya, dengan senang hati saya akan hadir</option>
+    <option value="tidak hadir">Maaf, tidak bisa hadir</option>
+  </select>
+ </div>
+ </div>
+ 
+ <div class="col-12">
+  <div class="mb-3">
+    <label for="message" class="form-label">Pesan Tambahan:</label>
+    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Pesan atau Ucapan Anda"></textarea>
+  </div>
+ </div>
+ 
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">kirim</button>
+  </div>
+ </form>
+
+   </div>
+</div>     
+
+    
+
+<div id="dataPengguna" class="dataPengguna">
+  <div class="row justify-content-center">
+   <div class="col-md-12 col-12">
+
+      <script>
+         fetch('https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec')
+           .then(response => response.json())
+           .then(data => {
+             // Lakukan sesuatu dengan data, misalnya tampilkan di dalam elemen HTML
+             const container = document.getElementById('outputUserKu');
+             data.forEach(row => {
+               const div = document.createElement('div');
+               Object.keys(row).forEach(key => {
+                 const p = document.createElement('p');
+                 p.textContent = `${key}: ${row[key]}`;
+                 div.appendChild(p);
+               });
+               container.appendChild(div);
+             });
+           })
+           .catch(error => console.error('Error:', error));
+       </script>
+       
+       <div id="outputUserKu"></div>
+       
+
+
+
+   </div>
+  </div> 
+</div>
+<!--      
 <div class="col-md-6">
   <div id="disqus_thread"></div>
 </div>
@@ -555,7 +606,7 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-     
+      -->
    </div>
  </section>
 <!--=========== RSVP Section End ========= -->
@@ -668,7 +719,11 @@
   </div>
 </div>
 <!--=========== music Section End ========= -->
-
+<section class="videos_pro" style=" display: flex; justify-content: center; align-items: center;">
+   <div class="video_weding" style="width: 80vh; height: auto; display: flex; justify-content: center;align-items: center;">
+      <video src="undangan-saya (Video).mp4" controls autoplay width="100%" height="100%" style="border-radius:  10px;">testing</video>
+   </div>
+</section>
 
 
          
@@ -801,9 +856,10 @@
       window.removeEventListener('touchmove', preventDefaultScroll);
 
       rootElement.style.scrollBehavior = 'smooth';
+      nav.style.display = "flex";
       localStorage.setItem('opened', 'true');
       iconicMusick.style.display = "flex"
-      nav.style.display = "flex"
+     
     }
 
     if(!localStorage.getItem('opened')){
