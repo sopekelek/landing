@@ -852,8 +852,9 @@
     }
 
     function enableScroll() {
-      playAudio()
+      
       window.removeEventListener('touchmove', preventDefaultScroll);
+      playAudio()
 
       rootElement.style.scrollBehavior = 'smooth';
       nav.style.display = "flex";
