@@ -891,12 +891,11 @@ p {
 .testimonial__section .right__shape img {
   width: 100%;
   height: 100%;
-}
-.testimonial__section .testi__items {
+}.testimonial__section .testi__items {
   position: relative;
   padding: 25px 15px;
 }
-.testimonial__section .testi__items::before {
+/* .testimonial__section .testi__items::before {
   position: absolute;
   top: 25px;
   left: 0px;
@@ -906,8 +905,8 @@ p {
   height: 100%;
   display: inline-block;
   transform: skew(3deg);
-}
-.testimonial__section .testi__items::after {
+} */
+/* .testimonial__section .testi__items::after {
   position: absolute;
   top: 15px;
   left: 0;
@@ -915,7 +914,8 @@ p {
   content: "";
   width: 100%;
   height: 100%;
-}
+} */
+
 .testimonial__section .testi__items .testi__thumb {
   position: absolute;
   top: 15px;

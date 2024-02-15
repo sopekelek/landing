@@ -161,7 +161,11 @@
    justify-content: center;
    align-items: center;
    
-}.collore-coklat{
+}.f-rows{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} .collore-coklat{
    background-color: #F9E8C9;
 }.radius-ku{
    border-radius: 20px;
@@ -212,12 +216,15 @@ table {
       content: "Nama";
    }
    td:nth-of-type(3):before {
-      content: "Konfirmasi";
+      content: "Jumlah";
    }
    td:nth-of-type(4):before {
+      content: "Konfirmasi";
+   }
+   td:nth-of-type(5):before {
       content: "Pesan";
    }
-   td:nth-of-type(1):before {
+   td:nth-of-type(6):before {
       content: "Whatsapp";
    }
 }
@@ -692,7 +699,7 @@ putra - putri kami
 
  <div class="input-group flex-nowrap">
    <span class="input-group-text bi-whatsapp bg-success" id="addon-wrapping"></span>
-   <input type="number" class="form-control bg-dark text-light" id="wa" name="wa" placeholder="Whatsapp +62">
+   <input type="tel" class="form-control bg-dark text-light" id="wa" name="wa" placeholder="Whatsapp +62" required>
  </div>
  
   <div class="col-12">
@@ -702,46 +709,6 @@ putra - putri kami
 
    </div>
 </div>     
-
-    
-
-<table class="dataTable">
-   <thead>
-     <tr>
-       <th>No</th>
-       <th>Nama</th>
-       <th>Konfirmasi</th>
-       <th>Status</th>
-       <th>Pesan</th>
-       <th>Whatsaap</th>
-     </tr>
-   </thead>
-   <tbody id="outputUserKuYa">
-      <!-- output user -->
-   </tbody>
- </table>
- 
-
- <script>
-    fetch('https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec')
-    .then(response => response.json())
-    .then(data => {
-      const tableBody = document.getElementById('outputUserKuYa');
-      data.forEach((row, index) => {
-         const tr = document.createElement('tr');
-         const numberCell = document.createElement('td');
-         numberCell.textContent = index + 1;
-         tr.appendChild(numberCell);
-         Object.values(row).forEach(value => {
-            const td = document.createElement('td');
-            td.textContent = value;
-            tr.appendChild(td);
-         });
-         tableBody.appendChild(tr);
-      });
-    })
-    .catch(error => console.error('Error:', error));
- </script>
 
 
 <!--      
@@ -769,10 +736,54 @@ putra - putri kami
       -->
    </div>
  </section>
+
+ <div class="container mt-5 collore-coklat radius-ku">
+   <div class="row justify-content-center align-items-center">
+      <div class="col-md-10 col-11">
+         <table class="dataTable mt-5 mb-5">
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Konfirmasi</th>
+                <th>Status</th>
+                <th>Pesan</th>
+                <th>Whatsaap</th>
+              </tr>
+            </thead>
+            <tbody id="outputUserKuYa">
+               <!-- output user -->
+            </tbody>
+          </table>
+          
+         
+          <script>
+             fetch('https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec')
+             .then(response => response.json())
+             .then(data => {
+               const tableBody = document.getElementById('outputUserKuYa');
+               data.forEach((row, index) => {
+                  const tr = document.createElement('tr');
+                  const numberCell = document.createElement('td');
+                  numberCell.textContent = index + 1;
+                  tr.appendChild(numberCell);
+                  Object.values(row).forEach(value => {
+                     const td = document.createElement('td');
+                     td.textContent = value;
+                     tr.appendChild(td);
+                  });
+                  tableBody.appendChild(tr);
+               });
+             })
+             .catch(error => console.error('Error:', error));
+          </script>
+      </div>
+   </div>
+ </div>
 <!--=========== RSVP Section End ========= -->
 
 <!--=========== GIFTS Section Here ========= -->
-<section id="gifts" class="gifts" >
+<section id="gifts" class="gifts collore-coklat radius-ku mt-5" >
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-md-8 col-10 text-center">
@@ -825,38 +836,28 @@ putra - putri kami
 <!--=========== Map Section End ========= -->
 
 <!--=========== Footer Section Here ========= -->
+<section class="">
+   <div class="container vheig collore-coklat radius-ku mt-5">
+      <div class="" style="text-align: center;">
+         <p class="mt-3">
+            Menjadi sebuah kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dalam hari bahagia ini. Terima kasih atas segala ucapan, doa, dan perhatian yang diberikan.
+         </p>
+         <h1 class=" mt-4" style="color: black;">
+            Thank you
+         </h1>
+         <h1 class="mb-4" style="color: black;">
+            Miftah & Nikmah
+         </h1>
+
+      </div>
+   </div>
+</section>
+
+
 <section class="footer__section">
    <div class="container">
       <div class="footer__top pt-120 pb-120">
-        <div class="row">
-         <div class="col-lg-12">
-            <div class="footer__content center">
-               <h2 class="footer__text">
-                  Thank you
-               </h2>
-               <h2>
-                  Miftah & Nikmah
-               </h2>
-               <ul class="social__icon">
-                  <li class="face">
-                      <a href="#0"><i class="fa-brands fa-facebook-f"></i></a>
-                  </li>
-                  <li class="face">
-                      <a href="#0"><i class="fa-brands fa-twitter"></i></a>
-                  </li>
-                  <li class="lind">
-                      <a href="#0"><i class="fa-brands fa-linkedin-in"></i></a>
-                  </li>
-                  <li class="insta">
-                      <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-                  </li>
-                  <li class="youtube">
-                      <a href="#0"><i class="fa-brands fa-youtube"></i></a>
-                  </li>
-              </ul>
-           </div>
-         </div>
-        </div>
+
       </div>
    </div>
    <div class="border__area">
