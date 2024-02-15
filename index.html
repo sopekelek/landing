@@ -148,6 +148,78 @@
    align-items: center;
 }li{
    color: blue;
+}.warna-items{
+   color: white;
+   background-color: rgba(233, 212, 23, 0.568);
+}.warna-putih{
+   color: white !important;
+}.item-black-ran{
+   background-color: rgba(151, 86, 0, 0.473);
+}.vheig{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}.collore-coklat{
+   background-color: #F9E8C9;
+}.radius-ku{
+   border-radius: 20px;
+}.mar-10-px{
+   margin: 10px;
+}
+
+table {
+   border-collapse: collapse;
+   width: 100%;
+} th, td {
+   color: black;
+   border: 1px solid blue;
+   padding: 8px;
+   text-align: left;
+} th {
+   background-color: #f2f2f2;
+} @media screen and (max-width: 600px){
+   table, head, tbody, th, td, tr {
+      display: block;
+   }
+   thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+   }
+   tr{
+      border: 1px solid #ccc;
+   }
+   td{
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%;
+   }
+   td::before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+   }
+   td:nth-of-type(1):before {
+      content: "No.";
+   }
+   td:nth-of-type(2):before {
+      content: "Nama";
+   }
+   td:nth-of-type(3):before {
+      content: "Konfirmasi";
+   }
+   td:nth-of-type(4):before {
+      content: "Pesan";
+   }
+   td:nth-of-type(1):before {
+      content: "Whatsapp";
+   }
 }
   </style>
 </head>
@@ -221,19 +293,43 @@
 
 
 
+<section>
+   <div class="container">
+      <div class="col-md-10 col-12 text-center justify-content-center align-items-center vheig collore-coklat mt-5 radius-ku">
+         <p class="collore-coklat mt-5">
+            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepada-Nya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."
 
+            - QS. Ar-Rum : 21 -
+         </p>
+         <img class="mt-5 mb-5" src="hadist.png" alt="hadist" width="80%" height="80%" style="border-radius: 20px;">
+      </div>
+   </div>
+</section>
 
+<section class="salam">
+   <div class="container">
+      <div class="col-md-10 col-12 text-center justify-content-center align-items-center vheig collore-coklat mt-5 radius-ku">
+         <p class="">
+            Assalamu'alaikum Wr Wb. <br>
+Tanpa mengurangi rasa hormat, kami
+bermaksud mengundang Bapak/Ibu/Saudara/i
+untuk menghadiri acara pernikahan
+putra - putri kami
+         </p>
+      </div>
+   </div>
+</section>
 <!--=========== About Section End selesai========= -->
 
 <!--=========== Celebrate Section Here selesai========= -->
-<section id="celebrate" class="celebrate__section pb-120 mt-5">
+<section id="celebrate" class="celebrate__section pb-120 mt-5 radius-ku">
    <div class="flowers__shape wow fadeInUp" data-wow-duration="4s">
       <img src="" alt="">
    </div>
    <div class="left__shape">
       <img src="left-bg-invited.png" alt="left__shape">
    </div>
-   <div class="container">
+   <div class="container collore-coklat radius-ku">
       <div class="celebrate__wrapper">
          <div class="border__shape">
             <img src="shape-bg-invited.png" alt="shape">
@@ -242,13 +338,13 @@
             <div class="col-xxl-6 col-xl-6 col-lg-6">
                <div class="celebrate__items">
                   <div class="celebrate__thumb">
-                     <img src="template.png" alt="celebrate__image" style="border-radius:10%;">
+                     <img class="mt-5" src="template.png" alt="celebrate__image" style="border-radius:10%;">
                   </div>
                </div>
             </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6">
+            <div class="col-xxl-6 col-xl-6 col-lg-6 mt-3">
                <div class="celebrate__content center">
-                  <h3>
+                  <h3 class="mt-3">
                      Join us to celebrate
                   </h3>
                   <h3>
@@ -267,7 +363,7 @@
                      <li>-</li>
                      <li class="mr-none">2024</li>
                   </ul>
-                  <div class="last__text">
+                  <div class="last__text mb-3">
                      <h3>
                         Starting at 08:30
                      </h3>
@@ -286,7 +382,7 @@
 
 <section class="about__section pt-120 pb-120" id="about">
    <div class="shape__right">
-      <img src="right.png" alt="shape-image">
+      <!-- <img src="right.png" alt="shape-image"> -->
    </div>
    <div class="shape__one">
       <img src="shape1.png" alt="shape-image">
@@ -331,38 +427,23 @@
 <!--=========== Celebrate Section End selesai========= -->
 
 <!--=========== Love Section Here selesai========= -->
-<section class="love__section pt-120 pb-120" id="story">
+<section id="love-storys" class="love-storys">
    <div class="container">
-      <div class="section__header section__center wow fadeInDown" data-wow-duration="4s">
-         <h2 class="section__title">
-            Our Love Story
-         </h2>
-         <img src="flower.png" alt="flower__tittle">
-      </div>
-      <div class="row g-0">
-         <div class="col-xxl-6 col-xl-6 col-lg-6">
-            <div class="love__items">
-               <div class="love__thumb wow fadeInDown" data-wow-duration="4s">
-                  <img src="flower50.png" alt="flower__thumb">
-                  <div class="love__wrapper">
-                     <div class="love__content">
-                        <h3></h3>
-                        <p class="captionsku">
-                           Ya Allah, jadikanlah akad ini sebagai ikatan yang diberkahi dan dilindungi, tanamkan di antara keduanya kerukunan dan ketetapan yang langgeng, jangan Engkau jadikan di antara keduanya perpecahan, perpisahan dan permusuhan, dan cukupi keduanya bekal hidup di dunia dan akhirat.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
+      <div class="row justify-content-center align-items-center text-center collore-coklat radius-ku vheig">
+         <div class="section__header section__center wow fadeInDown mt-5" data-wow-duration="4s">
+            <h2 class="section__title">
+               Our Love Story
+            </h2>
+            <img src="flower.png" alt="flower__tittle">
          </div>
-         <div class="col-xxl-6 col-xl-6 col-lg-6 mt-4">
-            <div class="right__thumb wow fadeInUp" data-wow-duration="3s">
-               <img src="captions-foto.jpg" alt="right__image">
-            </div>
-         </div>
+         <p class="mb-4">
+            Ya Allah, jadikanlah akad ini sebagai ikatan yang diberkahi dan dilindungi, tanamkan di antara keduanya kerukunan dan ketetapan yang langgeng, jangan Engkau jadikan di antara keduanya perpecahan, perpisahan dan permusuhan, dan cukupi keduanya bekal hidup di dunia dan akhirat.
+         </p>
+         <img class="mb-5" src="hadist.png" alt="hadist" width="80%" height="80%" style="border-radius: 20px;">
       </div>
    </div>
 </section>
+
 <!--=========== Love Section End selesai========= -->
 
 <!--=========== Gallery Section Here selesai========= -->
@@ -371,25 +452,68 @@
 <!--=========== Gallery Section End selesai========= -->
 
 <!--=========== Testimonial Section Here selesai========= -->
-<section class="testimonial__section pt-120 pb-120" id="book">
-   <div class="left__shape wow fadeInDown" data-wow-duration="3s">
-      <img src="shape-left.png" alt="left__shape">
-   </div>
-   <div class="right__shape wow fadeInUp" data-wow-duration="4s">
-      <img src="shape-right.png" alt="left__shape">
-   </div>
-   <div class="container">
+<section class="testimonial__section pt-120 pb-120">
+   <div class="container ">
       <div class="row g-4">
-         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInDown" data-wow-duration="3s">
-            <div class="testi__items center">
-               <div class="testi__thumb">
-                  <img src="provilmiftah.png" alt="testi-image" width="366px" height="366px">
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInDown collore-coklat radius-ku" data-wow-duration="3s">
+            <div class="center">
+               <div class="">
+                  <img src="provilmiftah.png" alt="testi-image" width="200px" height="200px">
                </div>
                <div class="testi__content">
-                  <h3>
+                  <h3 class="">
                      Ahmad Miftah Khuddin
                   </h3>
-                  <p>
+                  <p class="">
+                     Putra dari <br> Bpk Ahmad Mudhofir & Ibu Istirokhah <br> Dsn. Nanggungan Ds.Jatiharjo Kec. Pulokulon
+                  </p>
+                  <div class="testi__shape mt-3 mb-4">
+                     <img src="shape.png" alt="flower__image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInDown collore-coklat radius-ku" data-wow-duration="3s">
+            <div class="center">
+               <div class="">
+                  <img src="provil2-removebg-preview.png" alt="testi-image" width="200px" height="200px">
+               </div>
+               <div class="testi__content">
+                  <h3 class="">
+                     Maslakhatun Nikmah
+                  </h3>
+                  <p class="">
+                     Putri dari <br> Bpk Sukri & Ibu Parmi <br> Dsn. Bulu Ds. Kropak Kec. Wirosari
+                  </p>
+                  <div class="testi__shape mt-3 mb-4">
+                     <img src="shape.png" alt="flower__image">
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+
+      </div>
+   </div>
+</section>
+
+<!-- 
+<section class="testimonial__section pt-120 pb-120" id="book">
+   <div class="container">
+      <div class="row g-4">
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInDown warna-items" data-wow-duration="3s">
+            <div class="testi__items center">
+               <div class="testi__thumb">
+                  <img src="provilmiftah.png" alt="testi-image" width="900px" height="500px">
+               </div>
+               <div class="testi__content">
+                  <h3 class="item-black-ran warna-putih">
+                     Ahmad Miftah Khuddin
+                  </h3>
+                  <p class="item-black-ran warna-putih">
                      Putra dari <br> Bpk Ahmad Mudhofir & Ibu Istirokhah <br> Dsn. Nanggungan Ds.Jatiharjo Kec. Pulokulon
                   </p>
                   <div class="testi__shape mt-3">
@@ -398,16 +522,16 @@
                </div>
             </div>
          </div>
-         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInUp" data-wow-duration="4s">
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInUp warna-items" data-wow-duration="4s">
             <div class="testi__items center">
                <div class="testi__thumb">
                   <img src="provil2-removebg-preview.png" alt="testi-image" width="366px" height="366px">
                </div>
                <div class="testi__content">
-                  <h3>
+                  <h3 class="item-black-ran warna-putih">
                      Maslakhatun Nikmah
                   </h3>
-                  <p>
+                  <p class="item-black-ran warna-putih">
                      Putri dari <br> Bpk Sukri & Ibu Parmi <br> Dsn. Bulu Ds. Kropak Kec. Wirosari
                   </p>
                   <div class="testi__shape mt-3">
@@ -418,7 +542,7 @@
          </div>
       </div>
    </div>
-</section>
+</section> -->
 <!--=========== Testimonial Section End selesai========= -->
 
 <!--=========== Member Section Here selesai -1========= -->
@@ -446,12 +570,12 @@
 <!--=========== Member Section End selesai========= -->
 
 <!--=========== information Section Start selesai========= -->
-<section id="info" class="info">
+<section id="info" class="info collore-coklat radius-ku">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-10 col-12 text-center">
           <h2 class="mt-4">Informasi Acara</h2>
-          <p class="alamat">
+          <p class="alamat mb-3">
            Kediaman Mempelai Wanita, <br /> Alamat: Dsn.Bulu Dsa.Kropak RT/RW:09/04 Kec.Wirosari Kab.Grobogan
           </p>
           <div class="col-md-12 col-12 maps_embed">
@@ -520,7 +644,7 @@
 <!--=========== information Section End selesai========= -->
 
 <!--=========== RSVP Section Here ========= -->
-<section id="rsvp" class="rsvp p-5">
+<section id="rsvp" class="rsvp p-5 collore-coklat radius-ku mt-5">
    <div class="container">
 
      <div class="row justify-content-center">
@@ -534,27 +658,27 @@
    <div class="col-md-10 col-12">
 
       <form class="row g-1 align-items-center justify-content-center"  method="POST" 
-      action="https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec" id="my-form" novalidate>
+      action="https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec" id="my-form" validate>
   <div class="col-12">
     <div class="mb-3">
   <label for="nama" class="form-label">Nama Anda:</label>
-  <input type="text" class="form-control" id="nama" name="nama" placeholder="nama anda">
+  <input type="text" class="form-control" id="nama" name="nama" placeholder="nama anda" required>
  </div>
  </div>
  
  <div class="col-12">
   <div class="mb-3">
   <label for="jumlah" class="form-label">jumlah orang</label>
-  <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="" placeholder="jumlah orang">
+  <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="" placeholder="jumlah orang" required>
  </div>
  </div>
  
  <div class="col-12">
   <div class="mb-3">
   <label for="status" class="form-label">Akan Hadir.?</label>
-  <select name="status" id="status" class="form-select">
-    <option selected value="hadir">Ya, dengan senang hati saya akan hadir</option>
-    <option value="tidak hadir">Maaf, tidak bisa hadir</option>
+  <select name="status" id="status" class="form-select" required>
+    <option selected value="hadir donk">Ya, dengan senang hati saya akan hadir</option>
+    <option value=" maaf tidak bisa hadir">Maaf, tidak bisa hadir</option>
   </select>
  </div>
  </div>
@@ -562,13 +686,13 @@
  <div class="col-12">
   <div class="mb-3">
     <label for="message" class="form-label">Pesan Tambahan:</label>
-    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Pesan atau Ucapan Anda"></textarea>
+    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Pesan atau Ucapan Anda" required></textarea>
   </div>
  </div>
 
  <div class="input-group flex-nowrap">
    <span class="input-group-text bi-whatsapp bg-success" id="addon-wrapping"></span>
-   <input type="text" class="form-control bg-dark text-light" id="wa" name="wa" placeholder="Whatsapp +62">
+   <input type="number" class="form-control bg-dark text-light" id="wa" name="wa" placeholder="Whatsapp +62">
  </div>
  
   <div class="col-12">
@@ -581,43 +705,14 @@
 
     
 
-<!-- <div id="dataPengguna" class="dataPengguna">
-  <div class="row justify-content-center">
-   <div class="col-md-12 col-12">
-
-      <script>
-         fetch('https://script.google.com/macros/s/AKfycbyaRUU2zEIZ1xsqYLCJJum9NrH5iW3Ckj20XykOzIahGeSa2OFG6fn4MdV1MKA0QpEFRA/exec')
-           .then(response => response.json())
-           .then(data => {
-             // Lakukan sesuatu dengan data, misalnya tampilkan di dalam elemen HTML
-             const container = document.getElementById('outputUserKu');
-             data.forEach(row => {
-               const div = document.createElement('div');
-               Object.keys(row).forEach(key => {
-                 const p = document.createElement('p');
-                 p.textContent = `${key}: ${row[key]}`;
-                 div.appendChild(p);
-               });
-               container.appendChild(div);
-             });
-           })
-           .catch(error => console.error('Error:', error));
-       </script>
-       
-       <div id="outputUserKu"></div>
-   </div>
-  </div> 
-</div> -->
-
-
 <table class="dataTable">
    <thead>
      <tr>
        <th>No</th>
-       <th>Name</th>
-       <th>Confirm</th>
+       <th>Nama</th>
+       <th>Konfirmasi</th>
        <th>Status</th>
-       <th>Message</th>
+       <th>Pesan</th>
        <th>Whatsaap</th>
      </tr>
    </thead>
