@@ -96,7 +96,7 @@
       bottom: 5rem;
       right: 1.2rem;
       cursor: pointer;
-      color: white;
+      color: orange;
       opacity: 0.5;
       mix-blend-mode: difference;
       animation: rotating 4s linear infinite;
@@ -110,9 +110,11 @@
     @keyframes rotating {
       form{
         transform: rotate(0);
+        color: orange;
       }
       to{
         transform: rotate(360deg);
+        color: red;
       }
     }
 /* 
@@ -229,6 +231,8 @@ table {
    }
 }.mt-50ki{
    margin-top: 70px;
+}.mrt{
+   margin-top: 10px;
 }
   </style>
 </head>
@@ -237,9 +241,10 @@ table {
   <!--=========== Banner Section Here selesai========= -->
 <section id="hero" class="fulvh">
   <div class="container_flex">
-    <h6 class="wow fadeInDown" data-wow-duration="4s">Kepada yth <span></span> </h4>
-    <img class="animate__animated animate__pulse animate__delay-2s animate__infinite" src="hero_provil.png" alt="provil-depan" width="150px" height="150px"/>
-    <h5 class="wow fadeInUp" data-wow-duration="2s">The Wedding of</h5>
+    <h6 class="wow fadeInDown" data-wow-duration="4s">Kepada yth Bapak/Ibu/Saudara/i <br> <span></span> </h4>
+    <!-- <img class="animate__animated animate__pulse animate__delay-2s animate__infinite" src="hero_provil.png" alt="provil-depan" width="150px" height="150px"/>
+     -->
+    <h5 class="wow fadeInUp mrt" data-wow-duration="2s">The Wedding of</h5>
     <h1 class="wow fadeInDown colorku" data-wow-duration="4s" style="font-family:  Lobster, sans-serif;">Miftah & Nikmah</h1>
     <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
     <div class="simply-countdown padding_simply"></div>
@@ -264,10 +269,10 @@ table {
            </div>
            <ul class="main-menu">
                <li class="text-base">
-                   <a href="#hero" style="color: blue;">Home</a>
+                   <a href="#hero">Home</a>
                </li>
                <li>
-                   <a href="#celebrate">About</a>
+                   <a href="#quotes">About</a>
                </li>
                <li>
                    <a href="#story">story</a>
@@ -855,8 +860,20 @@ putra - putri kami
    </div>
 </section>
 
+<!-- videos -->
+<section class="videos_pro mt-4" style=" display: flex; justify-content: center; align-items: center;">
+   <div class="video_weding" style="width: 80vh; height: auto; display: flex; justify-content: center;align-items: center;">
+      <iframe width="320" height="245" src="https://www.youtube.com/embed/cCw1fH1IwTM?si=H4u-H5A8xlqBmEue? controls autoplay=1&mute=1">
+      </iframe>
+      
+      
+      <!-- <video src="https://youtu.be/_uEhlX9o5L8?si=I6rbkutQFxNasQJa" controls autoplay width="100%" height="100%" style="border-radius:  10px;">testing</video>
+    -->
+   </div>
+</section>
 
-<section class="footer__section">
+
+<section class="footer__section mt-2">
    <div class="container">
       <div class="footer__top pt-120 pb-120">
 
@@ -882,11 +899,7 @@ putra - putri kami
   </div>
 </div>
 <!--=========== music Section End ========= -->
-<!-- <section class="videos_pro" style=" display: flex; justify-content: center; align-items: center;">
-   <div class="video_weding" style="width: 80vh; height: auto; display: flex; justify-content: center;align-items: center;">
-      <video src="undangan-saya (Video).mp4" controls autoplay width="100%" height="100%" style="border-radius:  10px;">testing</video>
-   </div>
-</section> -->
+
 
 
          
@@ -985,7 +998,7 @@ putra - putri kami
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const nama = urlParams.get("nama") || "";
-    const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+    const pronoun = urlParams.get("p") || "NAMA TAMU";
     
     
     const namaContainer = document.querySelector("#hero h6 span");
