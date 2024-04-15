@@ -174,61 +174,76 @@
 }.mar-10-px{
    margin: 10px;
 }
+.containercok {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ccc; /* Tambahkan border untuk tabel */
+    }
+    th, td {
+      color: black;
+      border: 1px solid blue;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    @media screen and (max-width: 600px){
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+       th {
+      background-color: #red;
+    }
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr{
+        border: 1px solid #ccc;
+      }
+      td{
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+      }
+      td::before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+      td:nth-of-type(1):before {
+        content: "No.";
+      }
+      td:nth-of-type(2):before {
+        content: "Date";
+      }
+      td:nth-of-type(3):before {
+        content: "Nama";
+      }
+      td:nth-of-type(4):before {
+        content: "Jumlah";
+      }
+      td:nth-of-type(5):before {
+        content: "Konfirmasi";
+      }
+      td:nth-of-type(6):before {
+        content: "Pesan";
+      }
+      td:nth-of-type(7):before {
+        content: "Whatsapp";
+      }
+    }
 
-table {
-   border-collapse: collapse;
-   width: 100%;
-} th, td {
-   color: black;
-   border: 1px solid blue;
-   padding: 8px;
-   text-align: left;
-} th {
-   background-color: #f2f2f2;
-} @media screen and (max-width: 600px){
-   table, head, tbody, th, td, tr {
-      display: block;
-   }
-   thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-   }
-   tr{
-      border: 1px solid #ccc;
-   }
-   td{
-      border: none;
-      border-bottom: 1px solid #eee;
-      position: relative;
-      padding-left: 50%;
-   }
-   td::before {
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
-   }
-   td:nth-of-type(1):before {
-      content: "No.";
-   }
-   td:nth-of-type(2):before {
-      content: "Nama";
-   }
-   td:nth-of-type(3):before {
-      content: "Jumlah";
-   }
-   td:nth-of-type(4):before {
-      content: "Konfirmasi";
-   }
-   td:nth-of-type(5):before {
-      content: "Pesan";
-   }
-   td:nth-of-type(6):before {
-      content: "Whatsapp";
-   }
 }.mt-50ki{
    margin-top: 70px;
 }.mrt{
@@ -779,49 +794,57 @@ putra - putri kami
    </div>
  </section>
 
- <div class="container mt-5 collore-coklat radius-ku">
-   <div class="row justify-content-center align-items-center">
-      <div class="col-md-10 col-11">
-         <table class="dataTable mt-5 mb-5">
-            <thead>
-              <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>Konfirmasi</th>
-                <th>Status</th>
-                <th>Pesan</th>
-                <th>Whatsaap</th>
-              </tr>
-            </thead>
-            <tbody id="outputUserKuYa">
-               <!-- output user -->
-            </tbody>
-          </table>
-          
-         
-          <script>
-             fetch('https://script.google.com/macros/s/AKfycbxPSDgRMtjxUn7w6lQvxfnlEouMTR5u63r5EiLfTqiKd2nBMlEy5-bgTNrhyjUTqV_Gyg/exec')
-             .then(response => response.json())
-             .then(data => {
-               const tableBody = document.getElementById('outputUserKuYa');
-               data.forEach((row, index) => {
-                  const tr = document.createElement('tr');
-                  const numberCell = document.createElement('td');
-                  numberCell.textContent = index + 1;
-                  tr.appendChild(numberCell);
-                  Object.values(row).forEach(value => {
-                     const td = document.createElement('td');
-                     td.textContent = value;
-                     tr.appendChild(td);
-                  });
-                  tableBody.appendChild(tr);
-               });
-             })
-             .catch(error => console.error('Error:', error));
-          </script>
-      </div>
-   </div>
- </div>
+  <div class="containercok" id="dataContainer">
+    <table class="dataTable mt-5 mb-5">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Konfirmasi</th>
+          <th>Status</th>
+          <th>Pesan</th>
+          <th>Whatsaap</th>
+        </tr>
+      </thead>
+      <tbody id="outputUserKuYa">
+        <!-- output user -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    fetch('https://script.google.com/macros/s/AKfycbz8CNUKIYDOAJzgy_deqPdgxR9IfITFBW_2lN01y459iN2ZvwqCSCBkx9mdVpJdnhUtxg/exec')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.getElementById('outputUserKuYa');
+
+        if (data.status === 'OK') {
+          data.data.shift(); // Menghapus baris pertama dari data
+          data.data.forEach((row, index) => {
+            const tr = document.createElement('tr');
+            const numberCell = document.createElement('td');
+            numberCell.textContent = index + 1;
+            tr.appendChild(numberCell);
+            Object.values(row).forEach(value => {
+              const td = document.createElement('td');
+              td.textContent = value;
+              tr.appendChild(td);
+            });
+            tableBody.appendChild(tr);
+          });
+        } else {
+          const errorParagraph = document.createElement('p');
+          errorParagraph.textContent = 'Error fetching data from Google Sheets.';
+          tableBody.appendChild(errorParagraph);
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        const errorParagraph = document.createElement('p');
+        errorParagraph.textContent = 'An error occurred while fetching data.';
+        tableBody.appendChild(errorParagraph);
+      });
+  </script>
 <!--=========== RSVP Section End ========= -->
 
 <!--=========== GIFTS Section Here ========= -->
