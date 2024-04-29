@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="NextGenerationDev">
+   <title> pre-wedding </title>
+   <!--Favicon img-->
+   <link rel="shortcut icon" href="assets/img/logo/favicon.png">
+   <!--Bootstarp min css-->
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <!--Bootstarp map css-->
+   <link rel="stylesheet" href="bootstrap.css.map">
+   <!--Owl Carousel css-->
+   <link rel="stylesheet" href="owl.min.css">
+   <!--Owl Carousel Theme css-->
+   <link rel="stylesheet" href="owl.theme.default.min.css">
+   <!--All min css-->
+   <link rel="stylesheet" href="all.min.css">
+   <!--Animate css-->
+   <link rel="stylesheet" href="animate.css">
+   <!--Magnific popup css-->
+   <link rel="stylesheet" href="magnific-popup.css">
+   <!--Swiper min css-->
+   <link rel="stylesheet" href="swiper-bundle.min.css">
+   <!--main css-->
+   <link rel="stylesheet" href="main.css">
+   <!-- countdown -->
+   <link rel="stylesheet" href="simplyCountdown.theme.default.css"/>
+   <script src="simplyCountdown.min.js"></script>
+   <!-- botstrap icon-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <!-- animate -->
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+   />
+   <!-- font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+  <style>
+   body{
+      background-image: url('/Desain tanpa judul (21).png');
+      background-repeat: no-repeat;
+      background-position: top;
+      background-attachment: fixed;
+      background-size: cover;
+   }
+   .captionsku{
+      font-size: 9px;
+   }
+   .rsvp{
+      color: black;
+      /* background-image: url(love-bg.jpg); */
+   }
+   /* .gifts{
+      background-image: url(love-bg.jpg);
+   }
+   .contact__info{
+      background-image: url(love-bg.jpg);
+   } */
+   .dfrows{
+      display: flex;
+      flex-direction: row;
+   }.fulvh{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background: url('/Light.png') no-repeat top;
+     background-size: cover;
+   }.container_flex{
+     width: 90%;
+     height: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     flex-direction: column;
+     background: transparent;
+     backdrop-filter: blur(2px);
+   }.fulvh .container_flex h5{
+     font-family: "Crimson Text", serif;
+   }.fulvh .container_flex h1{
+     font-family: "Blacksword", sans-serif;
+   }.fulvh .container_flex h3{
+     font-family: "Blacksword", sans-serif;
+   }
+   .audio-icon-wrapper{
+      width: 3rem;
+      height: 3rem;
+      font-size: 3rem;
+      position: fixed;
+      bottom: 5rem;
+      right: 1.2rem;
+      cursor: pointer;
+      color: orange;
+      opacity: 0.5;
+      mix-blend-mode: difference;
+      animation: rotating 4s linear infinite;
+      transform-origin: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 0;
+      z-index: 999999;
+    }
+    @keyframes rotating {
+      form{
+        transform: rotate(0);
+        color: orange;
+      }
+      to{
+        transform: rotate(360deg);
+        color: red;
+      }
+    }
+/* 
+@media screen and (max-width: 575px) {
+  iframe{
+  width: 275px;
+  height: 400px;
+}
+} */
+.tombol{
+  color: white;
+  background-color: blue;
+  border: none;
+}.tombol:hover{
+  background-color: #1a0142;
+}
+/* .info{
+  background: url('/background-mobile.jpg') center center;
+} */
+.colorku{
+  color: #b69b03;
+}.padding_simply{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}.maps_embed{
+   display: flex; justify-content: center; align-items: center;
+}.maps_embed iframe{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}li{
+   color: blue;
+}.warna-items{
+   color: white;
+   background-color: rgba(233, 212, 23, 0.568);
+}.warna-putih{
+   color: white !important;
+}.item-black-ran{
+   background-color: rgba(151, 86, 0, 0.473);
+}.vheig{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}.f-rows{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} .collore-coklat{
+   background-color: #F9E8C9;
+}.radius-ku{
+   border-radius: 20px;
+}.mar-10-px{
+   margin: 10px;
+}
+.containercok {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid #ccc; /* Tambahkan border untuk tabel */
+    }
+    th, td {
+      color: black;
+      border: 1px solid blue;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    @media screen and (max-width: 600px){
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+       th {
+      background-color: #red;
+    }
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tr{
+        border: 1px solid #ccc;
+      }
+      td{
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+      }
+      td::before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+      td:nth-of-type(1):before {
+        content: "No.";
+      }
+      td:nth-of-type(2):before {
+        content: "Date";
+      }
+      td:nth-of-type(3):before {
+        content: "Nama";
+      }
+      td:nth-of-type(4):before {
+        content: "Jumlah";
+      }
+      td:nth-of-type(5):before {
+        content: "Konfirmasi";
+      }
+      td:nth-of-type(6):before {
+        content: "Pesan";
+      }
+      td:nth-of-type(7):before {
+        content: "Whatsapp";
+      }
+    }
+
+}.mt-50ki{
+   margin-top: 70px;
+}.mrt{
+   margin-top: 10px;
+}
+.in{
+   font-size: 7rem;
+   color: green;
+ 
+}
+.mom{
+   border-radius: 5%;
+   width: 50%;
+}.kk{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+  </style>
+</head>
+<body>
+  
+  <!--=========== Banner Section Here selesai========= -->
+<section id="hero" class="fulvh">
+  <div class="container_flex">
+    <h6 class="wow fadeInDown" data-wow-duration="4s">Kepada yth Bapak/Ibu/Saudara/i <br> <span></span> </h4>
+     <img class="animate__animated animate__pulse animate__delay-2s animate__infinite" src="profil01.png" alt="provil-depan" width="150px" height="150px"/>
+    <h5 class="wow fadeInUp mrt" data-wow-duration="2s">The Wedding of</h5>
+    <h1 class="wow fadeInDown colorku" data-wow-duration="4s" style="font-family:  Lobster, sans-serif;">Miftah & Nikmah</h1>
+    <h3 class="wow fadeInUp" data-wow-duration="2s">You are invited</h3>
+    <div class="simply-countdown padding_simply"></div>
+    <a href="#quotes" class="tombol btn btn-lg mt-4" onclick="enableScroll()">Lihat Undangan</a>
+  </div>
+</section>
+<!--=========== Banner Section End selesai========= -->
+
+ <!--Header Here selesai-->
+ <header class="header-section" style="display: flex;">
+   <div class="container">
+       <div class="header-wrapper">
+           <div class="logo-menu">
+               <a href="#hero" class="logo">
+                   <h6>Miftah & Nikmah</h6>
+               </a>
+           </div>
+           <div class="header-bar d-lg-none">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+           <ul class="main-menu">
+               <li class="text-base">
+                   <a href="#hero">Home</a>
+               </li>
+               <li>
+                   <a href="#quotes">About</a>
+               </li>
+               <li>
+                  <a href="#celebrate">Undangan</a>
+              </li>
+               <li>
+                   <a href="#love-storys">story</a>
+               </li>
+               <li>
+                  <a href="#pengantin">pengantin</a>
+              </li>
+               <li>
+                   <a href="#info">Informasi</a>
+               </li>
+               <li>
+                   <a href="#rsvp">RSVP</a>
+               </li>
+               <li>
+                  <a href="#gifts">GIFTS</a>
+              </li>
+              <li>
+               <a href="#videoseWedding">Videos</a>
+           </li>
+           </ul>
+       </div>
+   </div>
+</header>
+<!--Header End selesai-->
+
+<!--==== Scroll-Up Section Here selesai======= -->
+ <div class="scroll-up">
+   <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+   </svg>
+</div> 
+<!--==== Scroll-Up Section End selesai======= -->
+
+<!--=========== About Section Here selesai========= -->
+
+
+
+<section id="quotes">
+   <div class="container">
+      <div class="col-md-10 col-12 text-center justify-content-center align-items-center vheig collore-coklat mt-5 radius-ku">
+         <p class="collore-coklat  mt-50ki">
+            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepada-Nya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."
+
+            - QS. Ar-Rum : 21 -
+         </p>
+         <img class="mt-5 mb-5" src="wedding 1.jpg" alt="hadist" width="80%" height="80%" style="border-radius: 20px;">
+      </div>
+   </div>
+</section>
+
+<section class="salam">
+   <div class="container">
+      <div class="col-md-10 col-12 text-center justify-content-center align-items-center vheig collore-coklat mt-5 radius-ku">
+         <p class="">
+            Assalamu'alaikum Wr Wb. <br>
+Tanpa mengurangi rasa hormat, kami
+bermaksud mengundang Bapak/Ibu/Saudara/i
+untuk menghadiri acara pernikahan
+putra - putri kami
+         </p>
+      </div>
+   </div>
+</section>
+<!--=========== About Section End selesai========= -->
+
+<!--=========== Celebrate Section Here selesai========= -->
+<section id="celebrate" class="celebrate__section pb-120 mt-5 radius-ku">
+   <div class="flowers__shape wow fadeInUp" data-wow-duration="4s">
+      <img src="" alt="">
+   </div>
+   <div class="left__shape">
+      <img src="left-bg-invited.png" alt="left__shape">
+   </div>
+   <div class="container collore-coklat radius-ku">
+      <div class="celebrate__wrapper">
+         <div class="border__shape">
+            <img src="shape-bg-invited.png" alt="shape">
+         </div>
+         <div class="row g-3 align-items-center">
+            <div class="col-xxl-6 col-xl-6 col-lg-6">
+               <div class="celebrate__items">
+                  <div class="celebrate__thumb">
+                     <img class="mt-5" src="poto awal2.jpg" alt="celebrate__image" style="border-radius:10%;">
+                  </div>
+               </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-lg-6 mt-3">
+               <div class="celebrate__content center">
+                  <h3 class="mt-3">
+                     Join us to celebrate
+                  </h3>
+                  <h3>
+                     The wedding day of
+                  </h3>
+                  <h2 class="celebrate__tittle" style="font-family: Lobster;">
+                     Miftah & Nikmah
+                  </h2>
+                  <h3 class="sub__tittle">
+                     Which is celebration on
+                  </h3>
+                  <ul class="d-flex">
+                     <li>Mei</li>
+                     <li>-</li>
+                     <li>09</li>
+                     <li>-</li>
+                     <li class="mr-none">2024</li>
+                  </ul>
+                  <div class="last__text mb-3">
+                     <h3>
+                        Starting at 08:30
+                     </h3>
+                     <p>
+                        In the morning
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+
+<section class="about__section pt-120 pb-120" id="about">
+   <div class="shape__right">
+      <!-- <img src="right.png" alt="shape-image"> -->
+   </div>
+   <div class="shape__one">
+      <img src="shape1.png" alt="shape-image">
+   </div>
+   <div class="container">
+      <div class="about__wrap">
+         <div class="flower__shape wow fadeInUp" data-wow-duration="3s">
+            <img src="flower1.png" alt="flower__image">
+         </div>
+         <div class="flower__shape__two wow fadeInDown" data-wow-duration="4s">
+            <img src="flower2.png" alt="flower__image">
+         </div>
+         <div class="about__wrapper__one  owl-theme owl-carousel">
+            <div class="about__items">
+               <div class="about__thumb">
+                  <img src="images (13).jpeg" alt="about__image">
+                  <div class="about__effect">
+                     <h6 class="tittle">Photography</h6>
+                  </div>
+               </div>
+             </div>
+             <div class="about__items">
+               <div class="about__thumb">
+                  <img src="images (16).jpeg" alt="about__image">
+                  <div class="about__effect">
+                     <h6 class="tittle">Fine Dining</h6>
+                  </div>
+               </div>
+             </div>
+             <div class="about__items">
+               <div class="about__thumb">
+                  <img src="images (18).jpeg" alt="about__image">
+                  <div class="about__effect">
+                     <h6 class="tittle">Registry</h6>
+                  </div>
+               </div>
+             </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--=========== Celebrate Section End selesai========= -->
+
+<!--=========== Love Section Here selesai========= -->
+<section id="love-storys" class="love-storys">
+   <div class="container">
+      <div class="row justify-content-center align-items-center text-center collore-coklat radius-ku vheig">
+         <div class="section__header section__center wow fadeInDown mt-5" data-wow-duration="4s">
+            <h2 class="section__title">
+               Our Love Story
+            </h2>
+            <img src="flower.png" alt="flower__tittle">
+         </div>
+         <p class="mb-4">
+            Ya Allah, jadikanlah akad ini sebagai ikatan yang diberkahi dan dilindungi, tanamkan di antara keduanya kerukunan dan ketetapan yang langgeng, jangan Engkau jadikan di antara keduanya perpecahan, perpisahan dan permusuhan, dan cukupi keduanya bekal hidup di dunia dan akhirat.
+         </p>
+         <img class="mb-5" src="nikmah.png" alt="hadist" width="80%" height="80%" style="border-radius: 20px;">
+      </div>
+   </div>
+</section>
+
+<!--=========== Love Section End selesai========= -->
+
+<!--=========== Gallery Section Here selesai========= -->
+
+
+<!--=========== Gallery Section End selesai========= -->
+
+<!--=========== Testimonial Section Here selesai========= -->
+<section id="pengantin" class="testimonial__section pt-120 pb-120">
+   <div class="container ">
+      <div class="row g-4">
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInDown collore-coklat radius-ku" data-wow-duration="3s">
+            <div class="center">
+               <div class="">
+                  <img src="nikmah (4).png" alt="testi-image" width="200px" height="200px">
+               </div>
+               <div class="testi__content">
+                  <h3 class="">
+                     Ahmad Miftah Khuddin
+                  </h3>
+                  <p class="">
+                     Putra dari <br> Bpk Ahmad Mudhofir & Ibu Istirokhah <br> Dsn. Nanggungan Ds.Jatiharjo Kec. Pulokulon
+                  </p>
+                  <div class="testi__shape mt-3 mb-4">
+                     <img src="shape.png" alt="flower__image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInDown collore-coklat radius-ku" data-wow-duration="3s">
+            <div class="center">
+               <div class="">
+                  <img src="nikmah (3).png" alt="testi-image" width="200px" height="200px">
+               </div>
+               <div class="testi__content">
+                  <h3 class="">
+                     Maslakhatun Nikmah
+                  </h3>
+                  <p class="">
+                     Putri dari <br> Bpk Sukri & Ibu Parmi <br> Dsn. Bulu Ds. Kropak Kec. Wirosari
+                  </p>
+                  <div class="testi__shape mt-3 mb-4">
+                     <img src="shape.png" alt="flower__image">
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+
+      </div>
+   </div>
+</section>
+
+<!-- 
+<section class="testimonial__section pt-120 pb-120" id="book">
+   <div class="container">
+      <div class="row g-4">
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInDown warna-items" data-wow-duration="3s">
+            <div class="testi__items center">
+               <div class="testi__thumb">
+                  <img src="provilmiftah.png" alt="testi-image" width="900px" height="500px">
+               </div>
+               <div class="testi__content">
+                  <h3 class="item-black-ran warna-putih">
+                     Ahmad Miftah Khuddin
+                  </h3>
+                  <p class="item-black-ran warna-putih">
+                     Putra dari <br> Bpk Ahmad Mudhofir & Ibu Istirokhah <br> Dsn. Nanggungan Ds.Jatiharjo Kec. Pulokulon
+                  </p>
+                  <div class="testi__shape mt-3">
+                     <img src="shape.png" alt="flower__image">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-xxl-6 col-xl-6 col-lg-6 wow fadeInUp warna-items" data-wow-duration="4s">
+            <div class="testi__items center">
+               <div class="testi__thumb">
+                  <img src="provil2-removebg-preview.png" alt="testi-image" width="366px" height="366px">
+               </div>
+               <div class="testi__content">
+                  <h3 class="item-black-ran warna-putih">
+                     Maslakhatun Nikmah
+                  </h3>
+                  <p class="item-black-ran warna-putih">
+                     Putri dari <br> Bpk Sukri & Ibu Parmi <br> Dsn. Bulu Ds. Kropak Kec. Wirosari
+                  </p>
+                  <div class="testi__shape mt-3">
+                     <img src="shape.png" alt="flower__image">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section> -->
+<!--=========== Testimonial Section End selesai========= -->
+
+<!--=========== Member Section Here selesai -1========= -->
+<section class="member__wedding__section pb-120">
+   <div class="member__section">
+      <div class="member__wrapper owl-theme owl-carousel">
+       <div class="member__thumb">
+          <img src="p01 (8).png" alt="member__image">
+       </div>
+       <div class="member__thumb">
+          <img src="p01 (7).png" alt="member__image">
+       </div>
+       <div class="member__thumb">
+          <img src="p01 (9).png" alt="member__image">
+       </div>
+       <div class="member__thumb">
+          <img src="p01 (6).png" alt="member__image">
+       </div>
+       <div class="member__thumb">
+          <img src="p01 (5).png" alt="member__image">
+       </div>
+      </div>
+   </div>
+</section>
+<!--=========== Member Section End selesai========= -->
+
+<!--=========== information Section Start selesai========= -->
+<section id="info" class="info collore-coklat radius-ku">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-12 text-center">
+          <h2 class="mt-4">Informasi Acara</h2>
+          <p class="alamat mb-3">
+           Kediaman Mempelai Wanita, <br /> Alamat: Dsn.Bulu Dsa.Kropak RT/RW:09/04 Kec.Wirosari Kab.Grobogan
+          </p>
+          <div class="col-md-12 col-12 maps_embed">
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1707786097298!6m8!1m7!1sGLp3ZsipgAry-HkM7YraUg!2m2!1d-7.117441813193694!2d111.0940456144842!3f22.187146669303647!4f0!5f0.7820865974627469" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+          </div>
+          <a href="https://s.id/Nikmahwedding" target="_blank" class="btn btn-light btn-sm my-3" target="_blank">Buka Peta Lokasi</a>
+          <p class="description">Diharapkan untuk tidak salah alamat dan tanggal, Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilakukan pernikahan, boleh jadi anda salah jadwal, atau salah tempat. </p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-5 col-11">
+          
+          <div class="card text-center text-bg-light mb-4">
+  <div class="card-header">
+    Akad Nikah
+  </div>
+  <div class="card-body">
+    <div class="row justify-content-center">
+      
+    <div class="col-md-6">
+      <i class="bi bi-watch d-block"></i>
+      <span>08.00 - selesai</span>
+    </div>
+    
+    <div class="col-md-6">
+      <i class="bi bi-calendar3 d-block"></i>
+      <span>Kamis, 09 Mei 2024</span>
+    </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+  </div>
+</div>
+       </div>
+        <div class="col-md-5 col-11 mb-5">
+          
+          <div class="card text-center text-bg-light">
+  <div class="card-header">
+    Resepsi
+  </div>
+  <div class="card-body">
+    <div class="row justify-content-center">
+      
+    <div class="col-md-6">
+      <i class="bi bi-watch d-block"></i>
+      <span>11.00 - selesai</span>
+    </div>
+    
+    <div class="col-md-6">
+      <i class="bi bi-calendar3 d-block"></i>
+      <span>Kamis, 09 Mei 2024</span>
+    </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh prosesi.
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--=========== information Section End selesai========= -->
+
+<!--=========== RSVP Section Here ========= -->
+<section id="rsvp" class="rsvp p-5 collore-coklat radius-ku mt-5">
+   <div class="container">
+
+     <div class="row justify-content-center">
+       <div class="col-md-10 col-12 text-center">
+         <h2 class="mt-5 mb-5">Konfirmasi Kehadiran</h2>
+         <p>isi form dibawah ini untuk melakukan konfirmasi kehadiran.</p>
+       </div>
+     </div>
+
+<div class="row justify-content-center">
+   <div class="col-md-10 col-12">
+
+      <form class="row g-1 align-items-center justify-content-center"  method="POST" 
+      action="https://script.google.com/macros/s/AKfycbz8CNUKIYDOAJzgy_deqPdgxR9IfITFBW_2lN01y459iN2ZvwqCSCBkx9mdVpJdnhUtxg/exec" id="my-form" validate>
+  <div class="col-12">
+    <div class="mb-3">
+  <label for="nama" class="form-label">Nama Anda:</label>
+  <input type="text" class="form-control" id="nama" name="nama" placeholder="nama anda" required>
+ </div>
+ </div>
+ 
+ <div class="col-12">
+  <div class="mb-3">
+  <label for="jumlah" class="form-label">jumlah orang</label>
+  <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="10" length="1" value="" placeholder="jumlah orang" required>
+ </div>
+ </div>
+ 
+ <div class="col-12">
+  <div class="mb-3">
+  <label for="status" class="form-label">Akan Hadir.?</label>
+  <select name="status" id="status" class="form-select" required>
+    <option selected value="hadir donk">Ya, dengan senang hati saya akan hadir</option>
+    <option value=" maaf tidak bisa hadir">Maaf, tidak bisa hadir</option>
+  </select>
+ </div>
+ </div>
+ 
+ <div class="col-12">
+  <div class="mb-3">
+    <label for="message" class="form-label">Pesan Tambahan:</label>
+    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Pesan atau Ucapan Anda" required></textarea>
+  </div>
+ </div>
+
+ <div class="input-group flex-nowrap">
+   <span class="input-group-text bi-whatsapp bg-success" id="addon-wrapping"></span>
+   <input type="tel" class="form-control bg-dark text-light" id="wa" name="wa" placeholder="Whatsapp +62" required>
+ </div>
+ 
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">kirim</button>
+  </div>
+ </form>
+
+   </div>
+</div>     
+
+<script>
+  window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+
+</script>
+<!--      
+<div class="col-md-6">
+  <div id="disqus_thread"></div>
+</div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    
+    var disqus_config = function () {
+    this.page.url = "https://landing-five-gilt.vercel.app";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "pre-wedding-miftah-and-nikmah"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://sopekelek.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      -->
+   </div>
+ </section>
+
+  <div class="containercok" id="dataContainer">
+    <table class="dataTable mt-5 mb-5">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Konfirmasi</th>
+          <th>Status</th>
+          <th>Pesan</th>
+          <th>Whatsaap</th>
+        </tr>
+      </thead>
+      <tbody id="outputUserKuYa">
+        <!-- output user -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    fetch('https://script.google.com/macros/s/AKfycbz8CNUKIYDOAJzgy_deqPdgxR9IfITFBW_2lN01y459iN2ZvwqCSCBkx9mdVpJdnhUtxg/exec')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.getElementById('outputUserKuYa');
+
+        if (data.status === 'OK') {
+          data.data.shift(); // Menghapus baris pertama dari data
+          data.data.forEach((row, index) => {
+            const tr = document.createElement('tr');
+            const numberCell = document.createElement('td');
+            numberCell.textContent = index + 1;
+            tr.appendChild(numberCell);
+            Object.values(row).forEach(value => {
+              const td = document.createElement('td');
+              td.textContent = value;
+              tr.appendChild(td);
+            });
+            tableBody.appendChild(tr);
+          });
+        } else {
+          const errorParagraph = document.createElement('p');
+          errorParagraph.textContent = 'Error fetching data from Google Sheets.';
+          tableBody.appendChild(errorParagraph);
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        const errorParagraph = document.createElement('p');
+        errorParagraph.textContent = 'An error occurred while fetching data.';
+        tableBody.appendChild(errorParagraph);
+      });
+  </script>
+<!--=========== RSVP Section End ========= -->
+
+<!--=========== GIFTS Section Here ========= -->
+<section id="gifts" class="gifts collore-coklat radius-ku mt-5" >
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-md-8 col-10 text-center">
+         
+         <h2 class="mt-5">Kirim Hadiah</h2>
+         <p></p>
+       </div>
+     </div>
+     
+     <div class="row justify-content-center text-center">
+       <div class="col-md-6">
+         <ul class="list-group mb-5">
+            
+ <li class="list-group-item">
+   
+      <div class="fw-bold">DANA</div>
+      081225843868 <br>
+      <img src="20240316_010527.jpg" alt="dana" style="width: 50%;"> 
+  
+   
+ </li>
+
+ <li class="list-group-item">
+   <a href="https://wa.me/6281225843868">
+   <div class="fw-bold">WHATSAAP</div>
+   <i class="bi bi-whatsapp in"></i>
+   
+</a>
+
+</li>
+</ul>
+       </div>
+     </div>
+     
+   </div>
+ </section>
+<!--=========== GIFTS Section End ========= -->
+
+<!--=========== Contact Info Section ========= -->
+
+<!--=========== Contact Info End ========= -->
+
+<section class="member__wedding__section pb-120">
+   <div class="member__section">
+      <div class="member__wrapper owl-theme owl-carousel">
+       <div class="member__thumb">
+          <img src="Yellow Simple Happy Diwali Instagram Post (4).png" alt="member__image" class="mom">
+       </div>
+       <div class="member__thumb">
+         <img src="Purple and Pink Gradient Dreamy Aesthetic Instagram Post (7).png" alt="member__image" class="mom">
+      </div>
+      </div>
+   </div>
+</section>
+
+<section class="member__wedding__section pb-120">
+   <div class="member__section">
+      <div class="member__wrapper owl-theme owl-carousel">
+       
+       <div class="member__thumb kk">
+          <img src="p01 (2).png" alt="member__image" class="mom" style="width: 50%;">
+          <img src="p01 (3).png" alt="member__image" class="mom" style="width: 50%;">
+      
+         </div>
+       <div class="member__thumb kk"> 
+          <img src="mm01 (6).png" alt="member__image" class="mom" style="width: 60%;">
+          <img src="mm01 (7).png" alt="member__image" class="mom" style="width: 60%;">
+      
+         </div>
+      
+       <div class="member__thumb kk">
+          <img src="mm01 (10).png" alt="member__image" class="mom" style="width: 60%;">
+          <img src="mm01 (11).png" alt="member__image" class="mom" style="width: 60%;">
+    
+         </div>
+      
+      </div>
+   </div>
+</section>
+<!--=========== Map Section Here ========= -->
+
+<!--=========== Map Section End ========= -->
+
+<!--=========== Footer Section Here ========= -->
+<section class="">
+   <div class="container vheig collore-coklat radius-ku mt-5">
+      <div class="" style="text-align: center;">
+         <p class="mt-3">
+            Menjadi sebuah kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dalam hari bahagia ini. Terima kasih atas segala ucapan, doa, dan perhatian yang diberikan.
+         </p>
+         <h1 class=" mt-4" style="color: black;">
+            Thank you
+         </h1>
+         <h1 class="mb-4" style="color: black;">
+            Miftah & Nikmah
+         </h1>
+
+      </div>
+   </div>
+</section>
+
+<!-- videos -->
+<section id="videoseWedding" class="videos_pro mt-4" style=" display: flex; justify-content: center; align-items: center;">
+   <div class="video_weding" style="width: 80vh; height: auto; display: flex; justify-content: center;align-items: center;">
+      <iframe width="320" height="245" src="https://www.youtube.com/embed/CFhLRQgU5VM?si=kR56bTBOAAteYvQC? controls autoplay=1&mute=1">
+      </iframe>
+      
+      
+      <!-- <video src="https://youtu.be/_uEhlX9o5L8?si=I6rbkutQFxNasQJa" controls autoplay width="100%" height="100%" style="border-radius:  10px;">testing</video>
+    -->
+   </div>
+</section>
+
+
+<section class="footer__section mt-2">
+   <div class="container">
+      <div class="footer__top pt-120 pb-120">
+
+      </div>
+   </div>
+   <div class="border__area">
+      <div class="container">
+         <div class="footer__bottom center">
+            <p>&copy; 2024 All Rights Reserved. Designed by <a href="#0" class="text-base-2">Miftah & Nikmah</a></p>
+         </div>
+      </div>
+   </div>
+</section>
+<!--=========== Footer Section End ========= -->
+
+<!--=========== music Section End ========= -->
+<div id="audio-container">
+  <audio id="song" autoplay loop>
+    <source src="yahabibal.mpeg" type="audio/mpeg">
+  </audio>
+  <div class="audio-icon-wrapper"  style="display: none;">
+    <i class="bi bi-disc"></i>
+  </div>
+</div>
+<!--=========== music Section End ========= -->
+
+
+
+         
+    
+   <!--Jquery 3 6 0 Min Js-->
+   <script src="jquery-3.6.0.min.js"></script>
+   <!--Bootstrap bundle Js-->
+   <script src="bootstrap.bundle.min.js"></script>
+   <!--Viewport Jquery Js-->
+   <script src="viewport.jquery.js"></script>
+   <!--Wow min Js-->
+   <script src="wow.min.js"></script>
+   <!--Owl Carousel min Js-->
+   <script src="owl.min.js"></script>
+   <!--Swiper min Js-->
+   <script src="swiper-bundle.min.js"></script> 
+   <!--Magnific popup min Js-->
+   <script src="jquery.magnific-popup.min.js"></script> 
+   <!--main Js-->
+   <script src="main.js"></script>
+
+
+   <script>
+    if (window.addEventListener) {
+    window.addEventListener('beforeunload', function () {
+      window.location.href = '#hero';
+    });
+  } else {
+    window.attachEvent('beforeunload', function () {
+      window.location.href = '#hero';
+    });
+  }
+   </script>
+
+
+
+      <!-- simplyCountdown -->
+      <script>
+         simplyCountdown('.simply-countdown', {
+                 year: 2024, // required
+                 month: 5, // required
+                 day: 9, // required
+                 hours: 8, // Default is 0 [0-23] integer
+                 minutes: 30, // Default is 0 [0-59] integer
+                 seconds: 0, // Default is 0 [0-59] integer
+                 words: { //words displayed into the countdown
+                     days: { singular: 'hari', plural: 'hari' },
+                     hours: { singular: 'jam', plural: 'jam' },
+                     minutes: { singular: 'menit', plural: 'menit' },
+                     seconds: { singular: 'detik', plural: 'detik' }
+                 },
+                 plural: true, //use plurals
+                 inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
+                 inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
+                 // in case of inline set to false
+                 enableUtc: false,
+                 onEnd: function () {
+                     // your code
+                     return;
+                 }
+         });
+     
+       </script>
+      <!-- input form -->
+   <script>
+      window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+
+   </script>
+   <!-- musical -->
+   <script>
+  let isPlaying = false;
+  const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+  const sng = document.querySelector("#song");
+  const audioIcon = document.querySelector(".audio-icon-wrapper i")
+    function playAudio(){
+     
+      
+      song.play();
+      audioIconWrapper.style.display = "flex";
+     
+      isPlaying = true;
+    }
+    audioIconWrapper.onclick = function() {
+     if(isPlaying){
+       song.pause();
+       audioIcon.classList.remove("bi-disc");
+       audioIcon.classList.add("bi-pause-circle");
+     } else {
+       song.play()
+       audioIcon.classList.add("bi-disc");
+       audioIcon.classList.remove("bi-pause-circle");
+     }
+     isPlaying = !isPlaying
+    }
+    
+  </script>
+  <!-- pronounce tamu -->
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get("nama") || "";
+    const pronoun = urlParams.get("p") || "NAMA TAMU";
+    
+    
+    const namaContainer = document.querySelector("#hero h6 span");
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+    
+    document.querySelector("#nama").value = nama;
+  </script>
+    <!-- lockscreen disable -->
+  <script>
+  const iconicMusick = document.querySelector(".audio-icon-wrapper");
+  const nav = document.querySelector(".header-section");
+    const rootElement = document.querySelector(":root");
+    let scrollTop = 0;
+    let scrollLeft = 0;
+
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.addEventListener('touchmove', preventDefaultScroll, { passive: false });
+
+      rootElement.style.scrollBehavior = 'auto';
+      
+    }
+
+    function preventDefaultScroll(e) {
+      e.preventDefault();
+      window.scrollTo(scrollLeft, scrollTop);
+    }
+
+    function enableScroll() {
+      
+     
+      playAudio();
+      window.removeEventListener('touchmove', preventDefaultScroll);
+      
+
+      rootElement.style.scrollBehavior = 'smooth';
+      
+      localStorage.setItem('opened', 'true');
+      iconicMusick.style.display = "flex";
+     
+    }
+
+    if(!localStorage.getItem('opened')){
+      console.log("sudah pernah")
+    }
+    disableScroll();
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4378760624285243"
+     crossorigin="anonymous"></script>
+</body>
+</html>
